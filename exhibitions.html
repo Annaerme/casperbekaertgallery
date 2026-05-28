@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Exhibitions — Casper Bekaert Gallery" />
+  <title>Exhibitions — Casper Bekaert Gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div id="cursor-dot" class="cursor-dot"></div>
+  <div id="cursor-ring" class="cursor-ring"></div>
+
+  <nav id="main-nav">
+    <a href="index.html" class="nav-logo">Casper Bekaert Gallery</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="exhibitions.html" class="nav-active">Exhibitions</a></li>
+      <li><a href="artists.html">Artists</a></li>
+      <li><a href="press.html">Press</a></li>
+      <li><a href="contact.html">About</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="https://www.instagram.com/casperbekaertgallery" target="_blank" rel="noopener" class="nav-social">Instagram</a>
+      <a href="https://www.facebook.com/people/Casperbekaertgallery/61579598334115/" target="_blank" rel="noopener" class="nav-social">Facebook</a>
+    </div>
+    <button id="nav-toggle" class="nav-toggle" aria-label="Menu openen" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+    <nav class="mobile-nav">
+      <a href="index.html"       class="mobile-nav-link">Home</a>
+      <a href="exhibitions.html" class="mobile-nav-link">Exhibitions</a>
+      <a href="artists.html"     class="mobile-nav-link">Artists</a>
+      <a href="press.html"       class="mobile-nav-link">Press</a>
+      <a href="contact.html"     class="mobile-nav-link">About</a>
+      <div class="mobile-nav-socials">
+        <a href="https://www.instagram.com/casperbekaertgallery" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/people/Casperbekaertgallery/61579598334115/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-label" data-i18n="exh.page.label">Tentoonstellingen</div>
+    <h1 class="page-hero-title" data-i18n="exh.page.title">Exhibitions</h1>
+  </div>
+
+  <!-- EXHIBITIONS FEATURE LAYOUT -->
+  <section class="exh-features">
+
+    <!-- Upcoming -->
+    <div class="exh-features-intro">
+      <span class="exh-features-intro-label" data-i18n="exh.upcoming">Upcoming Exhibitions</span>
+    </div>
+    <div class="exh-feature-upcoming">
+      <p class="exh-feature-upcoming-text" data-i18n="exh.no.upcoming">No upcoming projects yet</p>
+    </div>
+
+    <!-- Past -->
+    <div class="exh-features-intro" style="margin-top: 40px;">
+      <span class="exh-features-intro-label" data-i18n="exh.past">Past Exhibitions</span>
+    </div>
+
+    <!-- ── DISTILLERY ── -->
+    <article class="exh-feature reveal">
+      <div class="exh-feature-visual">
+        <a href="gallery-in-the-distillery.html" class="exh-feature-img-link">
+          <img
+            src="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/distillery/distillery-14.jpg"
+            alt="Gallery in the Distillery"
+          >
+        </a>
+      </div>
+      <div class="exh-feature-content">
+        <h2 class="exh-feature-name">Gallery in the Distillery</h2>
+        <p class="exh-feature-period">6–8 &amp; 14–15 March 2026 &nbsp;·&nbsp; Filliers Distillery</p>
+        <p class="exh-feature-copy" data-i18n="exh.dist.copy">
+          Art met craft. Contemporary works sparked curiosity, celebrated the space and offered inspiring experiences — transforming the Filliers Distillery into a site of imagination and discovery. 1.200 visitors over two weekends.
+        </p>
+        <div class="exh-feature-artists-block">
+          <p class="exh-feature-artists-head" data-i18n="exh.artists.with">With</p>
+          <p class="exh-feature-artists-names">
+            Alex Brassart, Arno Camps, Jan De Lauré, Jan Vindevogel,
+            Jeroen Frateur, Manon Soetens, Martha Onderwater,
+            Randoald Sabbe, Stief De Smet, William Ludwig Lutgens
+          </p>
+        </div>
+        <a href="gallery-in-the-distillery.html" class="exh-feature-cta" data-i18n="exh.view.cta">View exhibition →</a>
+      </div>
+    </article>
+
+    <!-- ── BAKERY ── -->
+    <article class="exh-feature reveal">
+      <div class="exh-feature-visual">
+        <a href="galleryinthebakery.html" class="exh-feature-img-link">
+          <img
+            src="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/bakery/bakery-07.jpg"
+            alt="Gallery in the Bakery"
+          >
+        </a>
+      </div>
+      <div class="exh-feature-content">
+        <h2 class="exh-feature-name">Gallery in the Bakery</h2>
+        <p class="exh-feature-period">10–12 October 2025 &nbsp;·&nbsp; Bakkerij Bekaert</p>
+        <p class="exh-feature-copy" data-i18n="exh.bak.copy">
+          Art and a unique space came together in an accessible, one-of-a-kind experience. The bakery's architecture — cold storage, ovens, flour-dusted walls — became the conceptual foundation. 750 visitors over three days.
+        </p>
+        <div class="exh-feature-artists-block">
+          <p class="exh-feature-artists-head" data-i18n="exh.artists.with">With</p>
+          <p class="exh-feature-artists-names">
+            Alex Brassart, Cas Reynders, Edo Maas,
+            Emile Desweemer, Jean De Groote,
+            Orlando Gruwez, Randoald Sabbe
+          </p>
+        </div>
+        <a href="galleryinthebakery.html" class="exh-feature-cta" data-i18n="exh.view.cta">View exhibition →</a>
+      </div>
+    </article>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="footer-logo">Casper Bekaert Gallery</a>
+        <p class="footer-tagline">A space where contemporary art meets unique places — immersive experiences beyond traditional white walls.</p>
+      </div>
+      <div>
+        <p class="footer-heading">Navigation</p>
+        <ul class="footer-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="exhibitions.html">Exhibitions</a></li>
+          <li><a href="artists.html">Artists</a></li>
+          <li><a href="press.html">Press</a></li>
+      <li><a href="contact.html">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">Social media</p>
+        <ul class="footer-nav">
+          <li><a href="https://www.instagram.com/casperbekaertgallery" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/people/Casperbekaertgallery/61579598334115/" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">Contact</p>
+        <div class="footer-contact">
+          <p>Pastorijstraat 20<br>Ertvelde, 9940<br>Belgium<br><br>
+            <a href="mailto:info@casperbekaertgallery.com">info@casperbekaertgallery.com</a><br>
+            <a href="tel:+32474910089">+32 474 91 00 89</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 Casper Bekaert Gallery — All rights reserved</p>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/casperbekaertgallery" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/people/Casperbekaertgallery/61579598334115/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
+</body>
+</html>

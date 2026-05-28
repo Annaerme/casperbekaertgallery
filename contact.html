@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Casper Bekaert Gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="cursor-dot" class="cursor-dot"></div>
+  <div id="cursor-ring" class="cursor-ring"></div>
+
+  <nav id="main-nav">
+    <a href="index.html" class="nav-logo">Casper Bekaert Gallery</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="exhibitions.html">Exhibitions</a></li>
+      <li><a href="artists.html">Artists</a></li>
+      <li><a href="press.html">Press</a></li>
+      <li><a href="contact.html" class="nav-active">About</a></li>
+    </ul>
+    <button id="nav-toggle" class="nav-toggle" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+    <nav class="mobile-nav">
+      <a href="index.html"       class="mobile-nav-link">Home</a>
+      <a href="exhibitions.html" class="mobile-nav-link">Exhibitions</a>
+      <a href="artists.html"     class="mobile-nav-link">Artists</a>
+      <a href="press.html"       class="mobile-nav-link">Press</a>
+      <a href="contact.html"     class="mobile-nav-link">About</a>
+      <div class="mobile-nav-socials">
+        <a href="https://www.instagram.com/casperbekaertgallery" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/people/Casperbekaertgallery/61579598334115/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="about-page">
+
+    <!-- TITLE -->
+    <h1 class="about-title" data-i18n="ct.page.title">About</h1>
+
+    <!-- ABOUT: text -->
+    <div class="about-info reveal">
+      <p class="about-section-text" data-i18n="ct.about.para1">What happens when a space, devoted to the kneading, rising and baking of bread, empties itself of all its objects and remains as an apparently hollow shell? And what if that very place becomes where art makes its entrance, not as an addition to a white, sterile gallery space, but as a new form of encounter between the everyday and the extraordinary?</p>
+      <p class="about-section-text" style="margin-top: 24px;" data-i18n="ct.about.para2">Gallery in the Bakery departs from a personal conviction: that art should come closer to people. Accessible, tangible, and made with whatever is at hand. The bakery and workshop of Casper's parents became the place where a passion for art and a desire to build something real first took concrete shape. Later, the aged cellars and functional interiors of the Filliers distillery offered a second chapter, different in character, equally unintended, and equally alive.</p>
+      <p class="about-section-text" style="margin-top: 24px;" data-i18n="ct.about.para3">Both spaces carry their own particular symbolism. Where the rhythm of labour and repetition once produced the smell of fresh bread, and where industry shaped rooms around function and time, a different kind of alchemy now takes place: a merging of images, materials and ideas. Each work carries its own voice, but together they search for harmony and unity, for a resonance that reaches beyond style or medium.</p>
+      <p class="about-section-text" style="margin-top: 24px;" data-i18n="ct.about.para4">The bakery and the distillery become laboratories of consonance, places where contrasts do not collide but complement, where individual works find meaning within the whole, and where the weight of a space's history quietly enters into conversation with what is shown inside it.</p>
+      <p class="about-section-text" style="margin-top: 24px;" data-i18n="ct.about.para5">As Marcel Duchamp brought art into the domain of the everyday, and Guillaume Bijl smuggled the everyday into the art world, Gallery in the Bakery moves between those two poles. There is no reconstruction of a shop here, nor a conventional gallery. Instead, a search for balance, between form and content, between intuition and concept, between distance and proximity.</p>
+      <p class="about-section-text" style="margin-top: 24px;" data-i18n="ct.about.para6">These spaces, never designed for art and never asking anything of you before you walk through the door, invite the viewer to look with an open eye. To experience the dialogue between works. To discover how, in unexpected rooms, new connections can form.</p>
+    </div>
+
+    <!-- TEAM -->
+    <div class="about-section reveal">
+      <h2 class="about-section-title" data-i18n="ct.team.title">Team</h2>
+      <div class="about-team-grid">
+        <div class="about-team-member reveal">
+          <a href="https://www.linkedin.com/in/casper-bekaert-513b31294" target="_blank" rel="noopener">
+            <img class="about-team-photo" src="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/Casper.JPG" alt="Casper Bekaert">
+          </a>
+          <p class="about-team-name">Casper Bekaert</p>
+          <p class="about-team-role" data-i18n="ct.team.role.cur">Co-founder &amp; Curator</p>
+        </div>
+        <div class="about-team-member reveal">
+          <a href="https://www.linkedin.com/in/anna-vermeulen-1482272bb" target="_blank" rel="noopener">
+            <img class="about-team-photo" src="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/Anna.png?v=2" alt="Anna Vermeulen" style="object-position: center 12%;">
+          </a>
+          <p class="about-team-name">Anna Vermeulen</p>
+          <p class="about-team-role" data-i18n="ct.team.role.dir">Co-founder &amp; Managing Director</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT subsection -->
+    <div class="about-section reveal" id="contact">
+      <h2 class="about-section-title" data-i18n="ct.title">Contact</h2>
+      <!-- Top grid: address + phone/socials -->
+      <div class="about-contact-cols">
+        <!-- Left: gallery info -->
+        <div>
+          <div class="about-block">
+            <p class="about-block-name">Casper Bekaert Gallery</p>
+            <p class="about-block-text">
+              Pastorijstraat 20<br>
+              Ertvelde, 9940<br>
+              Belgium
+            </p>
+          </div>
+          <div class="about-block">
+            <p class="about-block-label" data-i18n="ct.email">Email</p>
+            <p class="about-block-text"><a href="mailto:info@casperbekaertgallery.com">info@casperbekaertgallery.com</a></p>
+          </div>
+        </div>
+
+        <!-- Right: phone + socials -->
+        <div>
+          <div class="about-block">
+            <p class="about-block-label" data-i18n="ct.phone">Phone</p>
+            <p class="about-block-text">Casper Bekaert &nbsp;&nbsp;<a href="tel:+32474910089">+32 474 91 00 89</a></p>
+            <p class="about-block-text">Anna Vermeulen &nbsp;&nbsp;<a href="tel:+32485734084">+32 485 73 40 84</a></p>
+          </div>
+          <div class="about-block">
+            <p class="about-block-label" data-i18n="ct.socials.label">Socials</p>
+            <a href="https://www.instagram.com/casperbekaertgallery" target="_blank" rel="noopener" class="about-social-link">Instagram</a>
+            <a href="https://www.facebook.com/people/Casperbekaertgallery/61579598334115/" target="_blank" rel="noopener" class="about-social-link">Facebook</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form below the grid -->
+      <div class="about-block" style="margin-top: 48px;">
+        <p class="about-block-text" style="margin-bottom:32px; font-size:15px;" data-i18n="ct.form.intro">Do you have a question, an interest in collaborating, or need more information? We are happy to help. Feel free to get in touch with us.</p>
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="contact-field">
+            <input type="text" data-i18n-ph="ct.form.name" placeholder="Name" required />
+          </div>
+          <div class="contact-field">
+            <input type="email" data-i18n-ph="ct.email" placeholder="Email address" required />
+          </div>
+          <div class="contact-field">
+            <textarea data-i18n-ph="ct.form.message" placeholder="Message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="contact-submit" data-i18n="ct.form.submit">Send message</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- MAILING LIST -->
+    <div class="about-section reveal">
+      <h2 class="about-section-title" data-i18n="ct.ml.title">Mailing list</h2>
+      <div class="about-form-wrap">
+        <p class="about-section-text" style="margin-bottom:32px;" data-i18n="ct.ml.intro">Stay informed about new exhibitions, artists and gallery news. We believe in sharing art as a way of connecting.</p>
+        <form id="newsletter-form" class="contact-form" novalidate>
+          <div class="contact-field">
+            <input type="text" data-i18n-ph="nl.firstname" placeholder="First name" />
+          </div>
+          <div class="contact-field">
+            <input type="text" data-i18n-ph="nl.lastname" placeholder="Last name" />
+          </div>
+          <div class="contact-field">
+            <input type="email" data-i18n-ph="nl.email" placeholder="Email address" required />
+          </div>
+          <button type="submit" class="contact-submit" data-i18n="nl.submit">Subscribe</button>
+        </form>
+        <p id="subscribe-success" class="subscribe-success" data-i18n="nl.success">Thank you — welcome to the gallery.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="footer-logo">Casper Bekaert Gallery</a>
+        <p class="footer-tagline">A space where contemporary art meets unique places — immersive experiences beyond traditional white walls.</p>
+      </div>
+      <div>
+        <p class="footer-heading">Navigation</p>
+        <ul class="footer-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="exhibitions.html">Exhibitions</a></li>
+          <li><a href="artists.html">Artists</a></li>
+          <li><a href="press.html">Press</a></li>
+      <li><a href="contact.html">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">Social media</p>
+        <ul class="footer-nav">
+          <li><a href="https://www.instagram.com/casperbekaertgallery" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/people/Casperbekaertgallery/61579598334115/" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">Contact</p>
+        <div class="footer-contact">
+          <p>Pastorijstraat 20<br>Ertvelde, 9940<br>Belgium<br><br>
+            <a href="mailto:info@casperbekaertgallery.com">info@casperbekaertgallery.com</a><br>
+            <a href="tel:+32474910089">+32 474 91 00 89</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 Casper Bekaert Gallery — All rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
+</body>
+</html>

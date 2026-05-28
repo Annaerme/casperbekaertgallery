@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery in the Bakery — Casper Bekaert Gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="cursor-dot" class="cursor-dot"></div>
+  <div id="cursor-ring" class="cursor-ring"></div>
+
+  <nav id="main-nav">
+    <a href="index.html" class="nav-logo">Casper Bekaert Gallery</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="exhibitions.html" class="nav-active">Exhibitions</a></li>
+      <li><a href="artists.html">Artists</a></li>
+      <li><a href="press.html">Press</a></li>
+      <li><a href="contact.html">About</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="https://www.instagram.com/casperbekaertgallery" target="_blank" rel="noopener" class="nav-social">Instagram</a>
+      <a href="https://www.facebook.com/people/Casperbekaertgallery/61579598334115/" target="_blank" rel="noopener" class="nav-social">Facebook</a>
+    </div>
+    <button id="nav-toggle" class="nav-toggle" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+    <nav class="mobile-nav">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="exhibitions.html" class="mobile-nav-link">Exhibitions</a>
+      <a href="artists.html" class="mobile-nav-link">Artists</a>
+      <a href="press.html" class="mobile-nav-link">Press</a>
+      <a href="contact.html" class="mobile-nav-link">About</a>
+      <div class="mobile-nav-socials">
+        <a href="https://www.instagram.com/casperbekaertgallery" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/people/Casperbekaertgallery/61579598334115/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- TOP BAR: back link + nav -->
+  <div class="exh-top-bar">
+    <a href="exhibitions.html" class="exh-page-back" data-i18n="exh.back">← Exhibitions</a>
+    <nav class="exh-page-nav">
+      <a href="#overview" data-i18n="exh.nav.overview">Overview</a>
+      <a href="#installation-views" data-i18n="exh.nav.photos">Photos</a>
+      <a href="#artists" data-i18n="exh.nav.artists">Artists</a>
+      <a href="#press" data-i18n="exh.nav.press">Press</a>
+      <a href="#publication" data-i18n="exh.nav.publication">Publication</a>
+    </nav>
+  </div>
+
+  <!-- HERO GRID: title + text LEFT, photo RIGHT -->
+  <div class="exh-hero-layout" id="overview">
+    <div class="exh-hero-left">
+      <div class="exh-hero-top">
+        <h1 class="exh-page-title">Gallery in <em>the Bakery</em></h1>
+        <div class="exh-page-meta-line">
+          <span data-i18n="exh.type.label">Group exhibition</span>
+          <span>Bakkerij Bekaert, Ertvelde</span>
+          <span>10–12 October 2025</span>
+          <span data-i18n="exh.bak.visitors">750 visitors</span>
+        </div>
+      </div>
+      <div class="exh-hero-body">
+        <p data-i18n="exh.bak.body.p1">Art and a unique space came together in an accessible, one-of-a-kind experience. The bakery's architecture — cold storage, ovens, flour-dusted walls — became the conceptual foundation of the exhibition.</p>
+        <p data-i18n="exh.bak.body.p2">Seven artists responded to the space with works ranging from painting to sculpture. Where the rhythm of labour once produced the smell of fresh bread, a different kind of alchemy took place: a merging of images, materials, and ideas.</p>
+        <p data-i18n="exh.bak.body.p3">Not a reconstruction, not a conventional gallery — a search for balance between form and content, between intuition and concept. Over three days, 750 visitors discovered art in a setting that transformed the familiar into something unforgettable.</p>
+      </div>
+    </div>
+    <div class="exh-overview-photo">
+      <img src="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/bakery/bakery-07.jpg" alt="Gallery in the Bakery">
+    </div>
+  </div>
+
+  <!-- INSTALLATION VIEWS -->
+  <div class="photo-gallery-section" id="installation-views">
+    <div class="section-label reveal" data-i18n="exh.section.photos">Photos</div>
+    <p class="photo-credit reveal" data-i18n="exh.bak.photo.credit">Photography by Naya Vandevenne</p>
+    <div class="photo-gallery uniform" id="bakery-gallery">
+      <div class="gallery-item reveal"><img src="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/bakery/bakery-01.jpg" alt=""></div>
+      <div class="gallery-item reveal"><img src="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/bakery/bakery-02.jpg" alt=""></div>
+      <div class="gallery-item reveal"><img src="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/bakery/bakery-03.jpg" alt=""></div>
+      <div class="gallery-item reveal"><img src="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/bakery/bakery-04.jpg" alt=""></div>
+      <div class="gallery-item reveal"><img src="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/bakery/bakery-05.jpg" alt=""></div>
+      <div class="gallery-item reveal"><img src="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/bakery/bakery-06.jpg" alt=""></div>
+      <div class="gallery-item reveal"><img src="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/bakery/bakery-08.jpg" alt=""></div>
+      <div class="gallery-item reveal"><img src="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/bakery/bakery-10.jpg" alt=""></div>
+      <div class="gallery-item reveal"><img src="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/bakery/bakery-11.jpg" alt=""></div>
+      <div class="gallery-item reveal"><img src="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/bakery/bakery-12.jpg" alt=""></div>
+      <div class="gallery-item reveal"><img src="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/bakery/bakery-13.jpg" alt=""></div>
+      <div class="gallery-item reveal"><img src="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/bakery/bakery-14.jpg" alt=""></div>
+      <div class="gallery-item reveal"><img src="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/bakery/bakery-15.jpg" alt=""></div>
+      <div class="gallery-item reveal"><img src="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/bakery/bakery-16.jpg" alt=""></div>
+      <div class="gallery-item reveal"><img src="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/bakery/bakery-18.jpg" alt=""></div>
+      <div class="gallery-item reveal"><img src="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/bakery/bakery-19.jpg" alt=""></div>
+      <div class="gallery-item reveal"><img src="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/bakery/bakery-20.jpg" alt=""></div>
+    </div>
+  </div>
+
+  <div id="lightbox" class="lightbox" role="dialog">
+    <button class="lightbox-close" id="lb-close" data-i18n="exh.lb.close">✕ close</button>
+    <button class="lightbox-nav lightbox-prev" id="lb-prev">‹</button>
+    <img id="lb-img" src="" alt="">
+    <button class="lightbox-nav lightbox-next" id="lb-next">›</button>
+    <span class="lightbox-counter" id="lb-counter"></span>
+  </div>
+
+  <!-- ARTISTS -->
+  <div class="exh-artists-section" id="artists">
+    <div class="section-label reveal" data-i18n="exh.bak.section.artists">Discover the Artists</div>
+    <div class="exh-artists-grid">
+      <div class="exh-artist-bio reveal"><p class="exh-artist-bio-name"><a href="alex-brassart.html">Alex Brassart</a></p><p class="exh-artist-bio-text" data-i18n="exh.bak.bio.alex">Works with images from films, documentaries, and found materials, exploring the intangible and the underlying in his paintings. His work invites an ongoing dialogue between image, past, and viewer.</p></div>
+      <div class="exh-artist-bio reveal delay-1"><p class="exh-artist-bio-name">Cas Reynders</p><p class="exh-artist-bio-text" data-i18n="exh.bak.bio.cas">Rooted in authentic craftsmanship and the use of local materials. His designs are pure, timeless creations that bridge tradition and contemporary design, with a deep appreciation for cultural heritage.</p></div>
+      <div class="exh-artist-bio reveal delay-2"><p class="exh-artist-bio-name">Edo Maas</p><p class="exh-artist-bio-text" data-i18n="exh.bak.bio.edo">Turned from cycling to art in 2021. From his Antwerp studio, he creates sculptures that capture raw human emotion in a personal yet universal language.</p></div>
+      <div class="exh-artist-bio reveal delay-3"><p class="exh-artist-bio-name">Jean De Groote</p><p class="exh-artist-bio-text" data-i18n="exh.bak.bio.jean">Often called the "painter of silence." He isolates simple, everyday objects from their context and distills them to their essence, evoking a meditative atmosphere in his still lifes.</p></div>
+      <div class="exh-artist-bio reveal"><p class="exh-artist-bio-name">Orlando Gruwez</p><p class="exh-artist-bio-text" data-i18n="exh.bak.bio.orlando">Explores the boundaries between language, image, and concept. His work is a continuous search for new forms of expression that connect thought and feeling.</p></div>
+      <div class="exh-artist-bio reveal delay-1"><p class="exh-artist-bio-name"><a href="randoald-sabbe.html">Randoald Sabbe</a></p><p class="exh-artist-bio-text" data-i18n="exh.bak.bio.randoald">Intertwines history, language, and symbolism in his art, exploring the ambiguity and layered nature of meaning. His works invite reflection and a deeper dialogue between past and present.</p></div>
+      <div class="exh-artist-bio reveal delay-2"><p class="exh-artist-bio-name">Emile Desweemer</p><p class="exh-artist-bio-text" data-i18n="exh.bak.bio.emile">Creates collage-like paintings that merge abstraction and figuration into evocative memories, playfully visualising heavy themes such as mourning, pain and acceptance, while enveloping the viewer in a melancholic and ominous atmosphere.</p></div>
+    </div>
+  </div>
+
+  <!-- PRESS -->
+  <div class="press-section" id="press">
+    <div class="section-label reveal" data-i18n="exh.section.press">Press</div>
+    <div class="press-items">
+      <a href="https://avs.be/nieuws/bakkerij-bekaert-uit-ertvelde-heeft-voor-een-weekend-kunst-in-de-toonbank-in-plaats-van-brood" target="_blank" rel="noopener" class="press-item reveal">
+        <span class="press-source">AVS</span>
+        <span class="press-title">Bakkerij Bekaert uit Ertvelde heeft voor een weekend kunst in de toonbank in plaats van brood</span>
+        <span class="press-arrow">→</span>
+      </a>
+      <a href="https://www.nieuwsblad.be/regio/oost-vlaanderen/regio-gent/evergem/casper-20-bouwt-bakkerij-van-zijn-ouders-om-tot-galerie-de-muren-kregen-zelfs-een-likje-verf-waardoor-het-hier-wel-lijkt-op-een-expositieruimte/95879979.html" target="_blank" rel="noopener" class="press-item reveal delay-1">
+        <span class="press-source">Nieuwsblad</span>
+        <span class="press-title">Casper (20) bouwt bakkerij van zijn ouders om tot galerie: "De muren kregen zelfs een likje verf"</span>
+        <span class="press-arrow">→</span>
+      </a>
+      <a href="https://www.hln.be/evergem/gallery-in-the-bakery-kunst-tussen-ovens-en-bloem-in-ertvelde~ae477cbc/" target="_blank" rel="noopener" class="press-item reveal delay-2">
+        <span class="press-source">HLN</span>
+        <span class="press-title">Gallery in the Bakery: kunst tussen ovens en bloem in Ertvelde</span>
+        <span class="press-arrow">→</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- PDF VIEWER -->
+  <div class="pdf-section" id="publication">
+    <div class="section-label" data-i18n="exh.section.pub">Publication</div>
+    <div class="pdf-viewer-wrap">
+      <div class="pdf-canvas-wrap" id="bak-wrap">
+        <canvas id="pdf-canvas-bak-l"></canvas>
+        <canvas id="pdf-canvas-bak-r"></canvas>
+      </div>
+      <div class="pdf-controls">
+        <button class="pdf-nav" id="bak-prev" data-i18n="exh.pdf.prev">← Previous</button>
+        <span class="pdf-counter" id="bak-counter">1 / —</span>
+        <button class="pdf-nav" id="bak-next" data-i18n="exh.pdf.next">Next →</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="footer-logo">Casper Bekaert Gallery</a>
+        <p class="footer-tagline">A space where contemporary art meets unique places — immersive experiences beyond traditional white walls.</p>
+      </div>
+      <div>
+        <p class="footer-heading">Navigation</p>
+        <ul class="footer-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="exhibitions.html">Exhibitions</a></li>
+          <li><a href="artists.html">Artists</a></li>
+          <li><a href="press.html">Press</a></li>
+      <li><a href="contact.html">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">Social media</p>
+        <ul class="footer-nav">
+          <li><a href="https://www.instagram.com/casperbekaertgallery" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/people/Casperbekaertgallery/61579598334115/" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">Contact</p>
+        <div class="footer-contact">
+          <p>Pastorijstraat 20<br>Ertvelde, 9940<br>Belgium<br><br>
+            <a href="mailto:info@casperbekaertgallery.com">info@casperbekaertgallery.com</a><br>
+            <a href="tel:+32474910089">+32 474 91 00 89</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 Casper Bekaert Gallery — All rights reserved</p>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/casperbekaertgallery" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/people/Casperbekaertgallery/61579598334115/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script>
+    pdfjsLib.GlobalWorkerOptions.workerSrc =
+      'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+    (function() {
+      const url     = 'https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/pdfs/Gallery%20in%20the%20bakery.pdf';
+      const wrap    = document.getElementById('bak-wrap');
+      const canvasL = document.getElementById('pdf-canvas-bak-l');
+      const canvasR = document.getElementById('pdf-canvas-bak-r');
+      const counter = document.getElementById('bak-counter');
+      const btnPrev = document.getElementById('bak-prev');
+      const btnNext = document.getElementById('bak-next');
+      let pdfDoc = null, spread = 0;
+      function renderCanvas(canvas, pageIndex, isSingle) {
+        if (pageIndex < 1 || pageIndex > pdfDoc.numPages) { canvas.width=0; canvas.height=0; return; }
+        pdfDoc.getPage(pageIndex).then(page => {
+          const dpr = window.devicePixelRatio || 1;
+          const available = isSingle ? wrap.clientWidth : wrap.clientWidth / 2;
+          const scale = available / page.getViewport({scale:1}).width;
+          const vp = page.getViewport({scale: scale * dpr});
+          canvas.width = vp.width; canvas.height = vp.height;
+          canvas.style.width  = (vp.width  / dpr) + 'px';
+          canvas.style.height = (vp.height / dpr) + 'px';
+          page.render({canvasContext: canvas.getContext('2d'), viewport: vp});
+        });
+      }
+      function clearCanvas(c) { c.width=0; c.height=0; c.style.width='0px'; c.style.height='0px'; }
+      function renderSpread(s) {
+        if (s === 0) {
+          wrap.classList.add('single');
+          renderCanvas(canvasL, 1, true); clearCanvas(canvasR);
+          counter.textContent = '1 / ' + pdfDoc.numPages;
+          btnPrev.disabled = true; btnNext.disabled = pdfDoc.numPages < 2;
+        } else {
+          const l = s*2, r = s*2+1;
+          if (r > pdfDoc.numPages) {
+            wrap.classList.add('single');
+            renderCanvas(canvasL, l, true); clearCanvas(canvasR);
+            counter.textContent = l + ' / ' + pdfDoc.numPages;
+            btnPrev.disabled = false; btnNext.disabled = true;
+          } else {
+            wrap.classList.remove('single');
+            renderCanvas(canvasL, l, false); renderCanvas(canvasR, r, false);
+            counter.textContent = l + (Math.min(r,pdfDoc.numPages)>l ? '–'+Math.min(r,pdfDoc.numPages) : '') + ' / ' + pdfDoc.numPages;
+            btnPrev.disabled = false; btnNext.disabled = r >= pdfDoc.numPages;
+          }
+        }
+      }
+      pdfjsLib.getDocument(url).promise.then(doc => { pdfDoc=doc; renderSpread(0); });
+      btnPrev.addEventListener('click', () => { spread=Math.max(0,spread-1); renderSpread(spread); });
+      btnNext.addEventListener('click', () => { spread+=1; renderSpread(spread); });
+    })();
+  </script>
+</body>
+</html>

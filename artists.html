@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artists — Casper Bekaert Gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="cursor-dot" class="cursor-dot"></div>
+  <div id="cursor-ring" class="cursor-ring"></div>
+
+  <nav id="main-nav">
+    <a href="index.html" class="nav-logo">Casper Bekaert Gallery</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="exhibitions.html">Exhibitions</a></li>
+      <li><a href="artists.html" class="nav-active">Artists</a></li>
+      <li><a href="press.html">Press</a></li>
+      <li><a href="contact.html">About</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="https://www.instagram.com/casperbekaertgallery" target="_blank" rel="noopener" class="nav-social">Instagram</a>
+      <a href="https://www.facebook.com/people/Casperbekaertgallery/61579598334115/" target="_blank" rel="noopener" class="nav-social">Facebook</a>
+    </div>
+    <button id="nav-toggle" class="nav-toggle" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+    <nav class="mobile-nav">
+      <a href="index.html"       class="mobile-nav-link">Home</a>
+      <a href="exhibitions.html" class="mobile-nav-link">Exhibitions</a>
+      <a href="artists.html"     class="mobile-nav-link">Artists</a>
+      <a href="press.html"       class="mobile-nav-link">Press</a>
+      <a href="contact.html"     class="mobile-nav-link">About</a>
+      <div class="mobile-nav-socials">
+        <a href="https://www.instagram.com/casperbekaertgallery" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/people/Casperbekaertgallery/61579598334115/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="artists-page-layout">
+
+    <!-- LEFT: name list -->
+    <div class="artists-list-panel">
+      <h1 class="artists-list-heading">Artists</h1>
+      <p class="artists-list-sub">Guest artists</p>
+
+      <div class="artist-names-grid">
+        <a href="alex-brassart.html"        class="artist-name-link" data-photo="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/Alex.png">Alex Brassart</a>
+        <a href="manon-soetens.html"         class="artist-name-link" data-photo="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/Manon.png">Manon Soetens</a>
+        <a href="arno-camps.html"           class="artist-name-link" data-photo="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/Arno.png">Arno Camps</a>
+        <a href="martha-onderwater.html"    class="artist-name-link" data-photo="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/Martha.png">Martha Onderwater</a>
+        <a href="jan-de-laure.html"         class="artist-name-link" data-photo="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/JanD.png">Jan de Lauré</a>
+        <a href="randoald-sabbe.html"       class="artist-name-link" data-photo="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/Randoald.png">Randoald Sabbe</a>
+        <a href="jan-vindevogel.html"       class="artist-name-link" data-photo="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/JanV.png">Jan Vindevogel</a>
+        <a href="stief-de-smet.html"        class="artist-name-link" data-photo="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/Stief.png">Stief De Smet</a>
+        <a href="jeroen-frateur.html"       class="artist-name-link" data-photo="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/jeroen.png">Jeroen Frateur</a>
+        <a href="william-ludwig-lutgens.html" class="artist-name-link" data-photo="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/William.png">William Ludwig Lutgens</a>
+      </div>
+    </div>
+
+    <!-- RIGHT: sticky photo panel -->
+    <div class="artists-photo-panel" id="artists-photo-panel">
+      <img id="ap-alex"    src="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/Alex.png"     alt="Alex Brassart">
+      <img id="ap-arno"    src="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/Arno.png"     alt="Arno Camps">
+      <img id="ap-jand"    src="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/JanD.png"     alt="Jan de Lauré">
+      <img id="ap-janv"    src="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/JanV.png"     alt="Jan Vindevogel">
+      <img id="ap-jeroen"  src="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/jeroen.png"   alt="Jeroen Frateur">
+      <img id="ap-manon"   src="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/Manon.png"    alt="Manon Soetens">
+      <img id="ap-martha"  src="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/Martha.png"   alt="Martha Onderwater">
+      <img id="ap-randoald" src="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/Randoald.png" alt="Randoald Sabbe">
+      <img id="ap-stief"   src="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/Stief.png"    alt="Stief De Smet">
+      <img id="ap-william" src="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/William.png"  alt="William Ludwig Lutgens">
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="footer-logo">Casper Bekaert Gallery</a>
+        <p class="footer-tagline">A space where contemporary art meets unique places — immersive experiences beyond traditional white walls.</p>
+      </div>
+      <div>
+        <p class="footer-heading">Navigation</p>
+        <ul class="footer-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="exhibitions.html">Exhibitions</a></li>
+          <li><a href="artists.html">Artists</a></li>
+          <li><a href="press.html">Press</a></li>
+      <li><a href="contact.html">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">Social media</p>
+        <ul class="footer-nav">
+          <li><a href="https://www.instagram.com/casperbekaertgallery" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/people/Casperbekaertgallery/61579598334115/" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">Contact</p>
+        <div class="footer-contact">
+          <p>Pastorijstraat 20<br>Ertvelde, 9940<br>Belgium<br><br>
+            <a href="mailto:info@casperbekaertgallery.com">info@casperbekaertgallery.com</a><br>
+            <a href="tel:+32474910089">+32 474 91 00 89</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 Casper Bekaert Gallery — All rights reserved</p>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/casperbekaertgallery" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/people/Casperbekaertgallery/61579598334115/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
+  <script>
+    const links = document.querySelectorAll('.artist-name-link');
+    const panel = document.getElementById('artists-photo-panel');
+    const isTouchDevice = () => window.matchMedia('(hover: none)').matches;
+
+    links.forEach(link => {
+      const src = link.dataset.photo;
+      const img = [...panel.querySelectorAll('img')].find(i => i.src.includes(src.split('/').pop()));
+
+      link.addEventListener('mouseenter', () => {
+        if (isTouchDevice()) return;
+        panel.querySelectorAll('img').forEach(i => i.classList.remove('visible'));
+        if (img) img.classList.add('visible');
+      });
+      link.addEventListener('mouseleave', () => {
+        if (isTouchDevice()) return;
+        panel.querySelectorAll('img').forEach(i => i.classList.remove('visible'));
+      });
+    });
+  </script>
+</body>
+</html>
