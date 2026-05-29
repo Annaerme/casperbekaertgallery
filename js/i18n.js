@@ -10,7 +10,12 @@ const I18N = {
     'nav.home':        'Home',
     'nav.exhibitions': 'Exhibitions',
     'nav.artists':     'Artists',
+    'nav.press':       'Press',
     'nav.contact':     'About',
+
+    /* ── Press page ── */
+    'press.title':     'Press',
+    'press.readmore':  'Read more →',
 
     /* ── Footer ── */
     'footer.tagline':  'A space where contemporary art meets unique places — immersive experiences beyond traditional white walls.',
@@ -229,7 +234,12 @@ const I18N = {
     'nav.home':        'Home',
     'nav.exhibitions': 'Tentoonstellingen',
     'nav.artists':     'Artiesten',
-    'nav.contact':     'About',
+    'nav.press':       'Pers',
+    'nav.contact':     'Over ons',
+
+    /* ── Press page ── */
+    'press.title':     'Pers',
+    'press.readmore':  'Lees meer →',
 
     /* ── Footer ── */
     'footer.tagline':  'Een ruimte waar hedendaagse kunst bijzondere plaatsen ontmoet — meeslepende ervaringen voorbij de traditionele witte muren.',
@@ -448,7 +458,12 @@ const I18N = {
     'nav.home':        'Accueil',
     'nav.exhibitions': 'Expositions',
     'nav.artists':     'Artistes',
-    'nav.contact':     'About',
+    'nav.press':       'Presse',
+    'nav.contact':     'À propos',
+
+    /* ── Press page ── */
+    'press.title':     'Presse',
+    'press.readmore':  'En savoir plus →',
 
     /* ── Footer ── */
     'footer.tagline':  'Un espace où l\'art contemporain rencontre des lieux uniques — des expériences immersives au-delà des murs blancs traditionnels.',
@@ -701,11 +716,12 @@ function applyLang(lang) {
     'index.html':      translations['nav.home'],
     'exhibitions.html':translations['nav.exhibitions'],
     'artists.html':    translations['nav.artists'],
+    'press.html':      translations['nav.press'],
     'contact.html':    translations['nav.contact'],
     '#':               translations['nav.home'],
   };
-  document.querySelectorAll('.nav-links a, .mobile-nav a.mobile-nav-link').forEach(a => {
-    const href = (a.getAttribute('href') || '').split('/').pop();
+  document.querySelectorAll('.nav-links a, .mobile-nav .mobile-nav-link').forEach(a => {
+    const href = (a.getAttribute('href') || '').split('/').pop().split('?')[0];
     if (navMap[href]) a.textContent = navMap[href];
   });
 
@@ -724,7 +740,7 @@ function applyLang(lang) {
   });
 
   /* Lang button active state */
-  document.querySelectorAll('.lang-btn').forEach(btn => {
+  document.querySelectorAll('.lang-btn, .mobile-lang-btn').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.lang === lang);
   });
 
@@ -769,11 +785,21 @@ function injectLangSwitcher() {
       sw.classList.remove('open');
     });
   });
+
+  // Mobiel menu taalknopjes (in HTML, event listeners hier)
+  document.querySelectorAll('.mobile-lang-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      setLang(btn.dataset.lang);
+      currentBtn.textContent = btn.dataset.lang.toUpperCase();
+    });
+  });
 }
 
 /* ─────────────────────────────────────────────
    Init
 ───────────────────────────────────────────── */
+window.setLang = setLang;
+
 document.addEventListener('DOMContentLoaded', () => {
   injectLangSwitcher();
   applyLang(getLang());

@@ -16,11 +16,11 @@
   <nav id="main-nav">
     <a href="index.html" class="nav-logo">Casper Bekaert Gallery</a>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="exhibitions.html" class="nav-active">Exhibitions</a></li>
-      <li><a href="artists.html">Artists</a></li>
-      <li><a href="press.html">Press</a></li>
-      <li><a href="contact.html">About</a></li>
+      <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+      <li><a href="exhibitions.html" class="nav-active" data-i18n="nav.exhibitions">Exhibitions</a></li>
+      <li><a href="artists.html" data-i18n="nav.artists">Artists</a></li>
+      <li><a href="press.html" data-i18n="nav.press">Press</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">About</a></li>
     </ul>
     <div class="nav-actions">
       <a href="https://www.instagram.com/casperbekaertgallery" target="_blank" rel="noopener" class="nav-social">Instagram</a>
@@ -32,14 +32,15 @@
   </nav>
   <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
     <nav class="mobile-nav">
-      <a href="index.html" class="mobile-nav-link">Home</a>
-      <a href="exhibitions.html" class="mobile-nav-link">Exhibitions</a>
-      <a href="artists.html" class="mobile-nav-link">Artists</a>
-      <a href="press.html" class="mobile-nav-link">Press</a>
-      <a href="contact.html" class="mobile-nav-link">About</a>
-      <div class="mobile-nav-socials">
-        <a href="https://www.instagram.com/casperbekaertgallery" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://www.facebook.com/people/Casperbekaertgallery/61579598334115/" target="_blank" rel="noopener">Facebook</a>
+      <a href="index.html" class="mobile-nav-link" data-i18n="nav.home">Home</a>
+      <a href="exhibitions.html" class="mobile-nav-link" data-i18n="nav.exhibitions">Exhibitions</a>
+      <a href="artists.html" class="mobile-nav-link" data-i18n="nav.artists">Artists</a>
+      <a href="press.html" class="mobile-nav-link" data-i18n="nav.press">Press</a>
+      <a href="contact.html" class="mobile-nav-link" data-i18n="nav.contact">About</a>
+      <div class="mobile-lang">
+        <button class="mobile-lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+        <button class="mobile-lang-btn" data-lang="nl" onclick="setLang('nl')">NL</button>
+        <button class="mobile-lang-btn" data-lang="fr" onclick="setLang('fr')">FR</button>
       </div>
     </nav>
   </div>
@@ -58,24 +59,22 @@
 
   <!-- HERO GRID: title + text LEFT, photo RIGHT -->
   <div class="exh-hero-layout" id="overview">
-    <div class="exh-hero-left">
-      <div class="exh-hero-top">
-        <h1 class="exh-page-title">Gallery in <em>the Bakery</em></h1>
-        <div class="exh-page-meta-line">
-          <span data-i18n="exh.type.label">Group exhibition</span>
-          <span>Bakkerij Bekaert, Ertvelde</span>
-          <span>10–12 October 2025</span>
-          <span data-i18n="exh.bak.visitors">750 visitors</span>
-        </div>
-      </div>
-      <div class="exh-hero-body">
-        <p data-i18n="exh.bak.body.p1">Art and a unique space came together in an accessible, one-of-a-kind experience. The bakery's architecture — cold storage, ovens, flour-dusted walls — became the conceptual foundation of the exhibition.</p>
-        <p data-i18n="exh.bak.body.p2">Seven artists responded to the space with works ranging from painting to sculpture. Where the rhythm of labour once produced the smell of fresh bread, a different kind of alchemy took place: a merging of images, materials, and ideas.</p>
-        <p data-i18n="exh.bak.body.p3">Not a reconstruction, not a conventional gallery — a search for balance between form and content, between intuition and concept. Over three days, 750 visitors discovered art in a setting that transformed the familiar into something unforgettable.</p>
-      </div>
+    <div class="exh-hero-top">
+      <h1 class="exh-page-title">Gallery in <em>the Bakery</em></h1>
+    </div>
+    <div class="exh-hero-body">
+      <p data-i18n="exh.bak.body.p1">Art and a unique space came together in an accessible, one-of-a-kind experience. The bakery's architecture — cold storage, ovens, flour-dusted walls — became the conceptual foundation of the exhibition.</p>
+      <p data-i18n="exh.bak.body.p2">Seven artists responded to the space with works ranging from painting to sculpture. Where the rhythm of labour once produced the smell of fresh bread, a different kind of alchemy took place: a merging of images, materials, and ideas.</p>
+      <p data-i18n="exh.bak.body.p3">Not a reconstruction, not a conventional gallery — a search for balance between form and content, between intuition and concept. Over three days, 750 visitors discovered art in a setting that transformed the familiar into something unforgettable.</p>
     </div>
     <div class="exh-overview-photo">
       <img src="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/bakery/bakery-07.jpg" alt="Gallery in the Bakery">
+      <div class="exh-page-meta-line">
+        <span data-i18n="exh.type.label">Group exhibition</span>
+        <span>Bakkerij Bekaert, Ertvelde</span>
+        <span>10–12 October 2025</span>
+        <span data-i18n="exh.bak.visitors">750 visitors</span>
+      </div>
     </div>
   </div>
 
@@ -173,11 +172,11 @@
       <div>
         <p class="footer-heading">Navigation</p>
         <ul class="footer-nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="exhibitions.html">Exhibitions</a></li>
-          <li><a href="artists.html">Artists</a></li>
-          <li><a href="press.html">Press</a></li>
-      <li><a href="contact.html">About</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="exhibitions.html" data-i18n="nav.exhibitions">Exhibitions</a></li>
+          <li><a href="artists.html" data-i18n="nav.artists">Artists</a></li>
+          <li><a href="press.html" data-i18n="nav.press">Press</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">About</a></li>
         </ul>
       </div>
       <div>
@@ -207,7 +206,7 @@
   </footer>
 
   <script src="js/main.js"></script>
-  <script src="js/i18n.js"></script>
+  <script src="js/i18n.js?v=7"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
   <script>
     pdfjsLib.GlobalWorkerOptions.workerSrc =

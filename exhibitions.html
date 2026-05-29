@@ -18,11 +18,11 @@
   <nav id="main-nav">
     <a href="index.html" class="nav-logo">Casper Bekaert Gallery</a>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="exhibitions.html" class="nav-active">Exhibitions</a></li>
-      <li><a href="artists.html">Artists</a></li>
-      <li><a href="press.html">Press</a></li>
-      <li><a href="contact.html">About</a></li>
+      <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+      <li><a href="exhibitions.html" class="nav-active" data-i18n="nav.exhibitions">Exhibitions</a></li>
+      <li><a href="artists.html" data-i18n="nav.artists">Artists</a></li>
+      <li><a href="press.html" data-i18n="nav.press">Press</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">About</a></li>
     </ul>
     <div class="nav-actions">
       <a href="https://www.instagram.com/casperbekaertgallery" target="_blank" rel="noopener" class="nav-social">Instagram</a>
@@ -35,14 +35,15 @@
 
   <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
     <nav class="mobile-nav">
-      <a href="index.html"       class="mobile-nav-link">Home</a>
-      <a href="exhibitions.html" class="mobile-nav-link">Exhibitions</a>
-      <a href="artists.html"     class="mobile-nav-link">Artists</a>
-      <a href="press.html"       class="mobile-nav-link">Press</a>
-      <a href="contact.html"     class="mobile-nav-link">About</a>
-      <div class="mobile-nav-socials">
-        <a href="https://www.instagram.com/casperbekaertgallery" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://www.facebook.com/people/Casperbekaertgallery/61579598334115/" target="_blank" rel="noopener">Facebook</a>
+      <a href="index.html"       class="mobile-nav-link" data-i18n="nav.home">Home</a>
+      <a href="exhibitions.html" class="mobile-nav-link" data-i18n="nav.exhibitions">Exhibitions</a>
+      <a href="artists.html"     class="mobile-nav-link" data-i18n="nav.artists">Artists</a>
+      <a href="press.html"       class="mobile-nav-link" data-i18n="nav.press">Press</a>
+      <a href="contact.html"     class="mobile-nav-link" data-i18n="nav.contact">About</a>
+      <div class="mobile-lang">
+        <button class="mobile-lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+        <button class="mobile-lang-btn" data-lang="nl" onclick="setLang('nl')">NL</button>
+        <button class="mobile-lang-btn" data-lang="fr" onclick="setLang('fr')">FR</button>
       </div>
     </nav>
   </div>
@@ -137,11 +138,11 @@
       <div>
         <p class="footer-heading">Navigation</p>
         <ul class="footer-nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="exhibitions.html">Exhibitions</a></li>
-          <li><a href="artists.html">Artists</a></li>
-          <li><a href="press.html">Press</a></li>
-      <li><a href="contact.html">About</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="exhibitions.html" data-i18n="nav.exhibitions">Exhibitions</a></li>
+          <li><a href="artists.html" data-i18n="nav.artists">Artists</a></li>
+          <li><a href="press.html" data-i18n="nav.press">Press</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">About</a></li>
         </ul>
       </div>
       <div>
@@ -171,6 +172,6 @@
   </footer>
 
   <script src="js/main.js"></script>
-  <script src="js/i18n.js"></script>
+  <script src="js/i18n.js?v=7"></script>
 </body>
 </html>

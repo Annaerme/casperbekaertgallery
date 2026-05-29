@@ -8,7 +8,149 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css?v=5" />
+  <style>
+    .home-quotes {
+      height: calc(100vh - 68px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 120px var(--pad) 0;
+      border-top: 1px solid #E8E8E8;
+      gap: 48px;
+    }
+    .home-quote-display {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(22px, 5vw, 48px);
+      font-weight: 300;
+      font-style: italic;
+      color: #111111;
+      line-height: 1.5;
+      letter-spacing: -0.01em;
+      text-align: center;
+      width: 100%;
+      max-width: 860px;
+      opacity: 0;
+    }
+    .home-quotes-ctas {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+    }
+    .home-quotes-cta {
+      font-family: 'Jost', Arial, sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #999999;
+      text-decoration: none;
+      transition: opacity 0.3s;
+    }
+    .home-quotes-cta:hover {
+      opacity: 0.5;
+    }
+
+    /* Mailing list popup */
+    .ml-popup {
+      position: fixed;
+      inset: 0;
+      background: rgba(17,17,17,0.5);
+      z-index: 900;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.5s ease;
+    }
+    .ml-popup--open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .ml-popup-box {
+      background: #ffffff;
+      padding: 52px 56px;
+      max-width: 440px;
+      width: 90%;
+      position: relative;
+    }
+    .ml-popup-close {
+      position: absolute;
+      top: 18px;
+      right: 22px;
+      background: none;
+      border: none;
+      font-size: 12px;
+      color: #bbbbbb;
+      cursor: pointer;
+      font-family: 'Jost', sans-serif;
+    }
+    .ml-popup-close:hover { color: #999999; }
+    .ml-popup-label {
+      font-family: 'Jost', sans-serif;
+      font-size: 9px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: #bbbbbb;
+      margin-bottom: 18px;
+    }
+    .ml-popup-title {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(26px, 3.5vw, 40px);
+      font-weight: 300;
+      line-height: 1.15;
+      color: #111111;
+      margin-bottom: 12px;
+    }
+    .ml-popup-title em { font-style: italic; }
+    .ml-popup-sub {
+      font-family: 'Jost', sans-serif;
+      font-size: 13px;
+      font-weight: 300;
+      color: #bbbbbb;
+      line-height: 1.7;
+      margin-bottom: 28px;
+    }
+    .ml-popup-form { display: flex; flex-direction: column; gap: 8px; }
+    .ml-popup-form input {
+      border: none;
+      border-bottom: 1px solid #E8E8E8;
+      padding: 9px 0;
+      font-family: 'Jost', sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      color: #111111;
+      outline: none;
+      transition: border-color 0.2s;
+      background: transparent;
+    }
+    .ml-popup-form input::placeholder { color: #cccccc; }
+    .ml-popup-form input:focus { border-color: #999999; }
+    .ml-popup-form button {
+      margin-top: 20px;
+      padding: 0 0 4px 0;
+      background: none;
+      color: #999999;
+      border: none;
+      border-bottom: 1px solid #E8E8E8;
+      font-family: 'Jost', sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      cursor: pointer;
+      align-self: flex-start;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .ml-popup-form button:hover { color: #111111; border-color: #999999; }
+    .ml-popup-success {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 18px;
+      font-style: italic;
+      color: #999999;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
 
@@ -18,11 +160,11 @@
   <nav id="main-nav">
     <a href="index.html" class="nav-logo">Casper Bekaert Gallery</a>
     <ul class="nav-links">
-      <li><a href="index.html" class="nav-active">Home</a></li>
-      <li><a href="exhibitions.html">Exhibitions</a></li>
-      <li><a href="artists.html">Artists</a></li>
-      <li><a href="press.html">Press</a></li>
-      <li><a href="contact.html">About</a></li>
+      <li><a href="index.html" class="nav-active" data-i18n="nav.home">Home</a></li>
+      <li><a href="exhibitions.html" data-i18n="nav.exhibitions">Exhibitions</a></li>
+      <li><a href="artists.html" data-i18n="nav.artists">Artists</a></li>
+      <li><a href="press.html" data-i18n="nav.press">Press</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">About</a></li>
     </ul>
     <div class="nav-actions">
       <a href="https://www.instagram.com/casperbekaertgallery" target="_blank" rel="noopener" class="nav-social">Instagram</a>
@@ -33,16 +175,34 @@
     </button>
   </nav>
 
+  <!-- MAILING LIST POPUP -->
+  <div id="ml-popup" class="ml-popup" aria-hidden="true">
+    <div class="ml-popup-box">
+      <button class="ml-popup-close" id="ml-popup-close" aria-label="Sluiten">✕</button>
+      <p class="ml-popup-label">Mailing list</p>
+      <h2 class="ml-popup-title">Stay close<br><em>to the gallery</em></h2>
+      <p class="ml-popup-sub">New exhibitions, artists and news — straight to your inbox.</p>
+      <form class="ml-popup-form" id="ml-popup-form" novalidate>
+        <input type="text" placeholder="First name" id="ml-popup-fname" />
+        <input type="text" placeholder="Last name" id="ml-popup-lname" />
+        <input type="email" placeholder="Email address" id="ml-popup-email" required />
+        <button type="submit">Subscribe</button>
+      </form>
+      <p class="ml-popup-success" id="ml-popup-success" style="display:none">Thank you — welcome to the gallery.</p>
+    </div>
+  </div>
+
   <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
     <nav class="mobile-nav">
-      <a href="index.html"       class="mobile-nav-link">Home</a>
-      <a href="exhibitions.html" class="mobile-nav-link">Exhibitions</a>
-      <a href="artists.html"     class="mobile-nav-link">Artists</a>
-      <a href="press.html"       class="mobile-nav-link">Press</a>
-      <a href="contact.html"     class="mobile-nav-link">About</a>
-      <div class="mobile-nav-socials">
-        <a href="https://www.instagram.com/casperbekaertgallery" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://www.facebook.com/people/Casperbekaertgallery/61579598334115/" target="_blank" rel="noopener">Facebook</a>
+      <a href="index.html"       class="mobile-nav-link" data-i18n="nav.home">Home</a>
+      <a href="exhibitions.html" class="mobile-nav-link" data-i18n="nav.exhibitions">Exhibitions</a>
+      <a href="artists.html"     class="mobile-nav-link" data-i18n="nav.artists">Artists</a>
+      <a href="press.html"       class="mobile-nav-link" data-i18n="nav.press">Press</a>
+      <a href="contact.html"     class="mobile-nav-link" data-i18n="nav.contact">About</a>
+      <div class="mobile-lang">
+        <button class="mobile-lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+        <button class="mobile-lang-btn" data-lang="nl" onclick="setLang('nl')">NL</button>
+        <button class="mobile-lang-btn" data-lang="fr" onclick="setLang('fr')">FR</button>
       </div>
     </nav>
   </div>
@@ -50,32 +210,12 @@
   <!-- HERO TITLE -->
   <div class="home-hero-title">
     <h1 class="home-hero-name">Casper Bekaert Gallery</h1>
-    <p class="home-hero-tagline">A space where contemporary art meets unique places — immersive experiences beyond traditional white walls.</p>
+    <p class="home-hero-tagline" data-i18n="footer.tagline">A space where contemporary art meets unique places — immersive experiences beyond traditional white walls.</p>
   </div>
 
-  <!-- PROJECTS SLIDESHOW -->
-  <div class="home-blob-wrap reveal">
-    <div class="home-blob-slider" id="home-blob-slider">
-
-      <div class="home-blob-slide active">
-        <img src="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/distillery/distillery-14.jpg" alt="Gallery in the Distillery">
-        <div class="home-blob-caption">
-          <span class="home-blob-caption-year">2026</span>
-          <span class="home-blob-caption-name">Gallery in <em>the Distillery</em></span>
-          <a href="gallery-in-the-distillery.html" class="home-blob-caption-link">Explore →</a>
-        </div>
-      </div>
-
-      <div class="home-blob-slide">
-        <img src="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/bakery/bakery-07.jpg" alt="Gallery in the Bakery">
-        <div class="home-blob-caption">
-          <span class="home-blob-caption-year">2025</span>
-          <span class="home-blob-caption-name">Gallery in <em>the Bakery</em></span>
-          <a href="galleryinthebakery.html" class="home-blob-caption-link">Explore →</a>
-        </div>
-      </div>
-
-    </div>
+  <!-- ROTATING QUOTES -->
+  <div class="home-quotes">
+    <div id="home-quote-display" class="home-quote-display"></div>
   </div>
 
   <!-- FOOTER -->
@@ -88,11 +228,11 @@
       <div>
         <p class="footer-heading">Navigation</p>
         <ul class="footer-nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="exhibitions.html">Exhibitions</a></li>
-          <li><a href="artists.html">Artists</a></li>
-          <li><a href="press.html">Press</a></li>
-      <li><a href="contact.html">About</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="exhibitions.html" data-i18n="nav.exhibitions">Exhibitions</a></li>
+          <li><a href="artists.html" data-i18n="nav.artists">Artists</a></li>
+          <li><a href="press.html" data-i18n="nav.press">Press</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">About</a></li>
         </ul>
       </div>
       <div>
@@ -122,16 +262,83 @@
   </footer>
 
   <script src="js/main.js"></script>
-  <script src="js/i18n.js"></script>
+  <script src="js/i18n.js?v=7"></script>
+  <script>
+    // Mailing list popup
+    (function () {
+      const popup  = document.getElementById('ml-popup');
+      const close  = document.getElementById('ml-popup-close');
+      const form   = document.getElementById('ml-popup-form');
+      const succ   = document.getElementById('ml-popup-success');
+      const SUPA_URL = 'https://wojavtiwvveynjbkwotd.supabase.co';
+      const SUPA_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndvamF2dGl3dnZleW5qYmt3b3RkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk5Mjk1NjksImV4cCI6MjA5NTUwNTU2OX0.9LsqSstJPEvwn3BHR6drEaf3PP_ZR3v5jMvdSkc8jO8';
+
+      function closePopup() {
+        popup.classList.remove('ml-popup--open');
+      }
+
+      if (!localStorage.getItem('ml-subscribed')) {
+        setTimeout(function () {
+          popup.classList.add('ml-popup--open');
+        }, 10000);
+      }
+
+      close.addEventListener('click', closePopup);
+      popup.addEventListener('click', function (e) {
+        if (e.target === popup) closePopup();
+      });
+
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        const payload = {
+          first_name: document.getElementById('ml-popup-fname').value.trim(),
+          last_name:  document.getElementById('ml-popup-lname').value.trim(),
+          email:      document.getElementById('ml-popup-email').value.trim(),
+        };
+        try {
+          await fetch(SUPA_URL + '/rest/v1/subscribers', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'apikey': SUPA_KEY, 'Authorization': 'Bearer ' + SUPA_KEY, 'Prefer': 'return=minimal' },
+            body: JSON.stringify(payload),
+          });
+        } catch (err) { console.error(err); }
+        localStorage.setItem('ml-subscribed', '1');
+        form.style.display = 'none';
+        succ.style.display = 'block';
+        setTimeout(closePopup, 3000);
+      });
+    })();
+  </script>
   <script>
     (function () {
-      const slides = document.querySelectorAll('.home-blob-slide');
+      const texts = [
+        "“What happens when a space, devoted to the kneading, rising and baking of bread, empties itself of all its objects — and what if that very place becomes where art makes its entrance?”",
+        "“Art should come closer to people. Accessible, tangible, and made with whatever is at hand.”",
+        "“Where labour once produced the smell of fresh bread, a different kind of alchemy now takes place: a merging of images, materials and ideas.”",
+        "“Places where contrasts do not collide but complement, where individual works find meaning within the whole.”",
+        "“A search for balance — between form and content, between intuition and concept, between distance and proximity.”",
+        "“These spaces invite the viewer to look with an open eye. To discover how, in unexpected rooms, new connections can form.”"
+      ];
+      const el = document.getElementById('home-quote-display');
       let cur = 0;
+
+      function show(i) {
+        el.style.transition = 'none';
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(16px)';
+        setTimeout(function () {
+          el.textContent = texts[i];
+          el.style.transition = 'opacity 1.8s ease, transform 1.8s ease';
+          el.style.opacity = '1';
+          el.style.transform = 'translateY(0)';
+        }, 600);
+      }
+
+      show(0);
       setInterval(function () {
-        slides[cur].classList.remove('active');
-        cur = (cur + 1) % slides.length;
-        slides[cur].classList.add('active');
-      }, 5000);
+        cur = (cur + 1) % texts.length;
+        show(cur);
+      }, 9000);
     })();
   </script>
 </body>

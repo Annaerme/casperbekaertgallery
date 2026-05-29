@@ -16,11 +16,11 @@
   <nav id="main-nav">
     <a href="index.html" class="nav-logo">Casper Bekaert Gallery</a>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="exhibitions.html" class="nav-active">Exhibitions</a></li>
-      <li><a href="artists.html">Artists</a></li>
-      <li><a href="press.html">Press</a></li>
-      <li><a href="contact.html">About</a></li>
+      <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+      <li><a href="exhibitions.html" class="nav-active" data-i18n="nav.exhibitions">Exhibitions</a></li>
+      <li><a href="artists.html" data-i18n="nav.artists">Artists</a></li>
+      <li><a href="press.html" data-i18n="nav.press">Press</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">About</a></li>
     </ul>
     <div class="nav-actions">
       <a href="https://www.instagram.com/casperbekaertgallery" target="_blank" rel="noopener" class="nav-social">Instagram</a>
@@ -32,14 +32,15 @@
   </nav>
   <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
     <nav class="mobile-nav">
-      <a href="index.html" class="mobile-nav-link">Home</a>
-      <a href="exhibitions.html" class="mobile-nav-link">Exhibitions</a>
-      <a href="artists.html" class="mobile-nav-link">Artists</a>
-      <a href="press.html" class="mobile-nav-link">Press</a>
-      <a href="contact.html" class="mobile-nav-link">About</a>
-      <div class="mobile-nav-socials">
-        <a href="https://www.instagram.com/casperbekaertgallery" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://www.facebook.com/people/Casperbekaertgallery/61579598334115/" target="_blank" rel="noopener">Facebook</a>
+      <a href="index.html" class="mobile-nav-link" data-i18n="nav.home">Home</a>
+      <a href="exhibitions.html" class="mobile-nav-link" data-i18n="nav.exhibitions">Exhibitions</a>
+      <a href="artists.html" class="mobile-nav-link" data-i18n="nav.artists">Artists</a>
+      <a href="press.html" class="mobile-nav-link" data-i18n="nav.press">Press</a>
+      <a href="contact.html" class="mobile-nav-link" data-i18n="nav.contact">About</a>
+      <div class="mobile-lang">
+        <button class="mobile-lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+        <button class="mobile-lang-btn" data-lang="nl" onclick="setLang('nl')">NL</button>
+        <button class="mobile-lang-btn" data-lang="fr" onclick="setLang('fr')">FR</button>
       </div>
     </nav>
   </div>
@@ -58,24 +59,22 @@
 
   <!-- HERO GRID: title + text LEFT, photo RIGHT -->
   <div class="exh-hero-layout" id="overview">
-    <div class="exh-hero-left">
-      <div class="exh-hero-top">
-        <h1 class="exh-page-title">Gallery in <em>the Distillery</em></h1>
-        <div class="exh-page-meta-line">
-          <span data-i18n="exh.type.label">Group exhibition</span>
-          <span>Filliers Distillery, Ertvelde</span>
-          <span>6–8 &amp; 14–15 March 2026</span>
-          <span data-i18n="exh.dist.visitors">1.200 visitors</span>
-        </div>
-      </div>
-      <div class="exh-hero-body">
-        <p data-i18n="exh.dist.body.p1">Art met craft. Contemporary works sparked curiosity and celebrated the space — transforming the Filliers Distillery into a site of imagination and discovery.</p>
-        <p data-i18n="exh.dist.body.p2">Ten artists responded to the industrial grandeur of the distillery with works ranging from painting to installation — each bringing a distinct voice to a space defined by copper kettles, oak barrels, and the scent of grain.</p>
-        <p data-i18n="exh.dist.body.p3">Over two weekends, 1.200 visitors discovered the intersection of contemporary art and craft heritage beyond the traditional white walls.</p>
-      </div>
+    <div class="exh-hero-top">
+      <h1 class="exh-page-title">Gallery in <em>the Distillery</em></h1>
+    </div>
+    <div class="exh-hero-body">
+      <p data-i18n="exh.dist.body.p1">Art met craft. Contemporary works sparked curiosity and celebrated the space — transforming the Filliers Distillery into a site of imagination and discovery.</p>
+      <p data-i18n="exh.dist.body.p2">Ten artists responded to the industrial grandeur of the distillery with works ranging from painting to installation — each bringing a distinct voice to a space defined by copper kettles, oak barrels, and the scent of grain.</p>
+      <p data-i18n="exh.dist.body.p3">Over two weekends, 1.200 visitors discovered the intersection of contemporary art and craft heritage beyond the traditional white walls.</p>
     </div>
     <div class="exh-overview-photo">
       <img src="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/distillery/distillery-14.jpg" alt="Gallery in the Distillery">
+      <div class="exh-page-meta-line">
+        <span data-i18n="exh.type.label">Group exhibition</span>
+        <span>Filliers Distillery, Ertvelde</span>
+        <span>6–8 &amp; 14–15 March 2026</span>
+        <span data-i18n="exh.dist.visitors">1.200 visitors</span>
+      </div>
     </div>
   </div>
 
@@ -175,11 +174,11 @@
       <div>
         <p class="footer-heading">Navigation</p>
         <ul class="footer-nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="exhibitions.html">Exhibitions</a></li>
-          <li><a href="artists.html">Artists</a></li>
-          <li><a href="press.html">Press</a></li>
-      <li><a href="contact.html">About</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="exhibitions.html" data-i18n="nav.exhibitions">Exhibitions</a></li>
+          <li><a href="artists.html" data-i18n="nav.artists">Artists</a></li>
+          <li><a href="press.html" data-i18n="nav.press">Press</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">About</a></li>
         </ul>
       </div>
       <div>
@@ -209,7 +208,7 @@
   </footer>
 
   <script src="js/main.js"></script>
-  <script src="js/i18n.js"></script>
+  <script src="js/i18n.js?v=7"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
   <script>
     pdfjsLib.GlobalWorkerOptions.workerSrc =

@@ -16,11 +16,11 @@
   <nav id="main-nav">
     <a href="index.html" class="nav-logo">Casper Bekaert Gallery</a>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="exhibitions.html">Exhibitions</a></li>
-      <li><a href="artists.html">Artists</a></li>
-      <li><a href="press.html" class="nav-active">Press</a></li>
-      <li><a href="contact.html">About</a></li>
+      <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+      <li><a href="exhibitions.html" data-i18n="nav.exhibitions">Exhibitions</a></li>
+      <li><a href="artists.html" data-i18n="nav.artists">Artists</a></li>
+      <li><a href="press.html" class="nav-active" data-i18n="nav.press">Press</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">About</a></li>
     </ul>
     <div class="nav-actions">
       <a href="https://www.instagram.com/casperbekaertgallery" target="_blank" rel="noopener" class="nav-social">Instagram</a>
@@ -33,21 +33,22 @@
 
   <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
     <nav class="mobile-nav">
-      <a href="index.html" class="mobile-nav-link">Home</a>
-      <a href="exhibitions.html" class="mobile-nav-link">Exhibitions</a>
-      <a href="artists.html" class="mobile-nav-link">Artists</a>
-      <a href="press.html" class="mobile-nav-link">Press</a>
-      <a href="contact.html" class="mobile-nav-link">About</a>
-      <div class="mobile-nav-socials">
-        <a href="https://www.instagram.com/casperbekaertgallery" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://www.facebook.com/people/Casperbekaertgallery/61579598334115/" target="_blank" rel="noopener">Facebook</a>
+      <a href="index.html" class="mobile-nav-link" data-i18n="nav.home">Home</a>
+      <a href="exhibitions.html" class="mobile-nav-link" data-i18n="nav.exhibitions">Exhibitions</a>
+      <a href="artists.html" class="mobile-nav-link" data-i18n="nav.artists">Artists</a>
+      <a href="press.html" class="mobile-nav-link" data-i18n="nav.press">Press</a>
+      <a href="contact.html" class="mobile-nav-link" data-i18n="nav.contact">About</a>
+      <div class="mobile-lang">
+        <button class="mobile-lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+        <button class="mobile-lang-btn" data-lang="nl" onclick="setLang('nl')">NL</button>
+        <button class="mobile-lang-btn" data-lang="fr" onclick="setLang('fr')">FR</button>
       </div>
     </nav>
   </div>
 
   <!-- PAGE HERO -->
   <div class="page-hero page-hero--press">
-    <h1 class="page-hero-title">Press</h1>
+    <h1 class="page-hero-title" data-i18n="press.title">Press</h1>
   </div>
 
   <!-- GALLERY IN THE DISTILLERY -->
@@ -62,7 +63,7 @@
         </div>
         <h2 class="press-card-title">In beeld: kunst tussen de stookketels</h2>
         <p class="press-card-summary">Kunstverzamelaars Casper (20) en Anna (21) openen een tentoonstelling bij Filliers Distillery in Deinze. Tien kunstenaars brachten hedendaagse werken in dialoog met de industriële ruimtes van de distilleerderij, tussen koperen ketels en eikenhouten vaten. Een fotoverslag van de expo die 1.200 bezoekers trok over twee weekends.</p>
-        <a href="https://www.hln.be/deinze/in-beeld-kunst-tussen-de-stookketels-kunstverzamelaars-casper-20-en-anna-21-openen-expo-bij-filliers-distillery~acc04183/" target="_blank" rel="noopener" class="press-card-cta">Read more →</a>
+        <a href="https://www.hln.be/deinze/in-beeld-kunst-tussen-de-stookketels-kunstverzamelaars-casper-20-en-anna-21-openen-expo-bij-filliers-distillery~acc04183/" target="_blank" rel="noopener" class="press-card-cta" data-i18n="press.readmore">Read more →</a>
       </div>
 
       <div class="press-card reveal delay-1">
@@ -72,7 +73,7 @@
         </div>
         <h2 class="press-card-title">Kunst is geen luxe maar deel van onze identiteit</h2>
         <p class="press-card-summary">Casper en Anna installeren artistiek werk tussen de koperen ketels van Filliers. In dit interview vertellen de curatoren over hun overtuiging dat kunst toegankelijk moet zijn voor iedereen, en hoe een onverwachte ruimte een tentoonstelling juist sterker kan maken.</p>
-        <a href="https://www.nieuwsblad.be/regio/oost-vlaanderen/regio-gent/deinze/casper-en-anna-installeren-artistiek-werk-tussen-koperen-ketels-van-filliers-kunst-is-geen-luxe-maar-deel-van-onze-identiteit/138302870.html" target="_blank" rel="noopener" class="press-card-cta">Read more →</a>
+        <a href="https://www.nieuwsblad.be/regio/oost-vlaanderen/regio-gent/deinze/casper-en-anna-installeren-artistiek-werk-tussen-koperen-ketels-van-filliers-kunst-is-geen-luxe-maar-deel-van-onze-identiteit/138302870.html" target="_blank" rel="noopener" class="press-card-cta" data-i18n="press.readmore">Read more →</a>
       </div>
 
     </div>
@@ -90,7 +91,7 @@
         </div>
         <h2 class="press-card-title">Bakkerij Bekaert heeft voor een weekend kunst in de toonbank</h2>
         <p class="press-card-summary">Bakkerij Bekaert uit Ertvelde heeft voor een weekend de broodtoonbank ingeruild voor kunst. Regionale televisiezender AVS bracht verslag uit over de allereerste editie van Gallery in the Bakery, waarbij de werkplaats van Caspers ouders werd omgevormd tot een unieke tentoonstellingsruimte.</p>
-        <a href="https://avs.be/nieuws/bakkerij-bekaert-uit-ertvelde-heeft-voor-een-weekend-kunst-in-de-toonbank-in-plaats-van-brood" target="_blank" rel="noopener" class="press-card-cta">Read more →</a>
+        <a href="https://avs.be/nieuws/bakkerij-bekaert-uit-ertvelde-heeft-voor-een-weekend-kunst-in-de-toonbank-in-plaats-van-brood" target="_blank" rel="noopener" class="press-card-cta" data-i18n="press.readmore">Read more →</a>
       </div>
 
       <div class="press-card reveal delay-1">
@@ -100,7 +101,7 @@
         </div>
         <h2 class="press-card-title">Casper (20) bouwt bakkerij van zijn ouders om tot galerie</h2>
         <p class="press-card-summary">Hoe verandert een jonge kunstliefhebber zijn ouderlijk huis in een galerieruimte? Casper Bekaert (20) schilderde de muren van de bakkerij en stelde zeven kunstenaars tentoon. "De muren kregen zelfs een likje verf, waardoor het hier wel lijkt op een expositieruimte." Een portret van de oprichter en zijn eerste stappen als curator.</p>
-        <a href="https://www.nieuwsblad.be/regio/oost-vlaanderen/regio-gent/evergem/casper-20-bouwt-bakkerij-van-zijn-ouders-om-tot-galerie-de-muren-kregen-zelfs-een-likje-verf-waardoor-het-hier-wel-lijkt-op-een-expositieruimte/95879979.html" target="_blank" rel="noopener" class="press-card-cta">Read more →</a>
+        <a href="https://www.nieuwsblad.be/regio/oost-vlaanderen/regio-gent/evergem/casper-20-bouwt-bakkerij-van-zijn-ouders-om-tot-galerie-de-muren-kregen-zelfs-een-likje-verf-waardoor-het-hier-wel-lijkt-op-een-expositieruimte/95879979.html" target="_blank" rel="noopener" class="press-card-cta" data-i18n="press.readmore">Read more →</a>
       </div>
 
       <div class="press-card reveal delay-2">
@@ -110,7 +111,7 @@
         </div>
         <h2 class="press-card-title">Gallery in the Bakery: kunst tussen ovens en bloem in Ertvelde</h2>
         <p class="press-card-summary">Lokale berichtgeving over de Gallery in the Bakery tentoonstelling in Ertvelde. Hoe een gewone buurtbakkerij gedurende drie dagen werd omgetoverd tot een ontmoetingsplek voor hedendaagse kunst, en hoe 750 bezoekers de weg vonden naar dit onverwachte tentoonstellingsadres.</p>
-        <a href="https://www.hln.be/evergem/gallery-in-the-bakery-kunst-tussen-ovens-en-bloem-in-ertvelde~ae477cbc/" target="_blank" rel="noopener" class="press-card-cta">Read more →</a>
+        <a href="https://www.hln.be/evergem/gallery-in-the-bakery-kunst-tussen-ovens-en-bloem-in-ertvelde~ae477cbc/" target="_blank" rel="noopener" class="press-card-cta" data-i18n="press.readmore">Read more →</a>
       </div>
 
     </div>
@@ -125,11 +126,11 @@
       <div>
         <p class="footer-heading">Navigation</p>
         <ul class="footer-nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="exhibitions.html">Exhibitions</a></li>
-          <li><a href="artists.html">Artists</a></li>
-          <li><a href="press.html">Press</a></li>
-          <li><a href="contact.html">About</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="exhibitions.html" data-i18n="nav.exhibitions">Exhibitions</a></li>
+          <li><a href="artists.html" data-i18n="nav.artists">Artists</a></li>
+          <li><a href="press.html" data-i18n="nav.press">Press</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">About</a></li>
         </ul>
       </div>
       <div>
@@ -159,6 +160,6 @@
   </footer>
 
   <script src="js/main.js"></script>
-  <script src="js/i18n.js"></script>
+  <script src="js/i18n.js?v=7"></script>
 </body>
 </html>
