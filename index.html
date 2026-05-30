@@ -207,15 +207,29 @@
     </nav>
   </div>
 
-  <!-- HERO TITLE -->
-  <div class="home-hero-title">
-    <h1 class="home-hero-name">Casper Bekaert Gallery</h1>
-    <p class="home-hero-tagline" data-i18n="footer.tagline">A space where contemporary art meets unique places — immersive experiences beyond traditional white walls.</p>
-  </div>
-
-  <!-- ROTATING QUOTES -->
-  <div class="home-quotes">
-    <div id="home-quote-display" class="home-quote-display"></div>
+  <!-- FULL SCREEN HERO -->
+  <div class="hero-fullscreen">
+    <img class="hero-slide active"
+      src="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/distillery/distillery-14.jpg"
+      alt="Gallery in the Distillery"
+      data-credit="Filliers Distillery, Ertvelde">
+    <img class="hero-slide"
+      src="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/bakery/bakery-07.jpg"
+      alt="Gallery in the Bakery"
+      data-credit="Bakkerij Bekaert, Ertvelde">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-left">
+        <h1 class="hero-title">Casper Bekaert Gallery</h1>
+        <div class="hero-ctas">
+          <a href="exhibitions.html" class="hero-btn hero-btn-light">Explore Exhibitions</a>
+          <a href="contact.html" class="hero-btn hero-btn-outline">About Us</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <p class="hero-credit" id="hero-credit">Filliers Distillery, Ertvelde</p>
+      </div>
+    </div>
   </div>
 
   <!-- FOOTER -->
@@ -263,6 +277,17 @@
 
   <script src="js/main.js"></script>
   <script src="js/i18n.js?v=7"></script>
+  <script>
+    const heroSlides = document.querySelectorAll('.hero-slide');
+    const heroCredit = document.getElementById('hero-credit');
+    let heroCurrent = 0;
+    setInterval(() => {
+      heroSlides[heroCurrent].classList.remove('active');
+      heroCurrent = (heroCurrent + 1) % heroSlides.length;
+      heroSlides[heroCurrent].classList.add('active');
+      if (heroCredit) heroCredit.textContent = heroSlides[heroCurrent].dataset.credit || '';
+    }, 5000);
+  </script>
   <script>
     // Mailing list popup
     (function () {

@@ -324,6 +324,90 @@ a { text-decoration: none; color: inherit; }
 }
 .marquee-item .dot { color: rgba(255,255,255,0.2); margin: 0 6px; }
 
+/* ─── Full-screen hero (homepage) ─────────────────── */
+.hero-fullscreen {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  overflow: hidden;
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0;
+  transition: opacity 1.4s var(--ease);
+}
+
+.hero-slide.active { opacity: 1; }
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.60) 0%, rgba(0,0,0,0.15) 55%, transparent 100%);
+}
+
+.hero-content {
+  position: absolute;
+  bottom: 52px;
+  left: var(--pad);
+  right: var(--pad);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.hero-title {
+  font-family: var(--serif);
+  font-size: clamp(36px, 5vw, 72px);
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  color: var(--white);
+}
+
+.hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  padding: 13px 26px;
+  border: 1px solid;
+  transition: background 0.25s, color 0.25s, border-color 0.25s;
+  cursor: pointer;
+}
+
+.hero-btn-light { background: var(--white); color: var(--black); border-color: var(--white); }
+.hero-btn-light:hover { background: transparent; color: var(--white); }
+.hero-btn-outline { background: transparent; color: var(--white); border-color: rgba(255,255,255,0.55); }
+.hero-btn-outline:hover { border-color: var(--white); }
+
+.hero-right { flex-shrink: 0; text-align: right; }
+
+.hero-credit {
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.50);
+}
+
 /* ─── Homepage intro ──────────────────────────────── */
 /* ─── Homepage hero title ─────────────────────────── */
 .home-hero-title {

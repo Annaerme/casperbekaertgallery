@@ -227,6 +227,26 @@ const I18N = {
     'william.label':  'Painting · b. 1993',
     'william.bio.p1': 'William Ludwig Lutgens is a Belgian painter whose work blends dreamlike imagery exploring the relationship between ego and media influence. His practice examines how self-image is shaped, and distorted, by cultural representation, advertising, and the saturated visual landscape of contemporary life.',
     'william.bio.p2': 'With international exhibitions spanning Europe and beyond since 2017, Lutgens has developed a distinctive visual language that sits between the familiar and the uncanny. His canvases draw viewers into spaces where identity becomes fluid and the boundaries between the personal and the collective dissolve.',
+
+    'emile.label':   'Painting · b. 2001',
+    'emile.bio.p1':  'Emile Desweemer (2001) brings a representation of how painting can playfully visualise heavy themes. Desweemer\'s paintings provide a broader view of how the artist deals with themes such as mourning, pain and acceptance. The works are not only individualistic, but also evoke a sense of recognition. The viewer is taken on an emotional journey, focusing on the contrast between abstract and figurative art.',
+    'emile.bio.p2':  'Emile Desweemer\'s work exudes a beautiful semblance of melancholy, in which darkness is often present as an undertone. The images are often constructed from a collage form — composed of various fragments from different scenarios. The artist views his work as a representation of a memory. Desweemer\'s work often has an ominous atmosphere, like a disaster waiting to happen.',
+
+    'orlando.label':  'Painting · Drawing · b. 1994',
+    'orlando.bio.p1': 'Orlando Gruwez (1994) is a painter and occasionally a maker of furniture and sculptures. Using old books, encyclopedias, postcards, collected prints, and self-made photographs, he searches for his own visual language. Transience is an important theme throughout his work. He primarily works with oil paint, and in recent years he has increasingly focused on drawing.',
+    'orlando.bio.p2': 'During secondary school, he followed a program in visual arts, which sparked his interest in art. He completed a full-time wood and furniture program at Goca Gent, then studied interior design at LUCA School of Arts Gent, graduating in 2017. Since then, he has continued painting and has participated in various exhibitions, both in group shows and in collaboration with galleries or museums.',
+
+    'cas.label':   'Design · Craftsmanship · b. 2000',
+    'cas.bio.p1':  'Cas Reynders (2000) is a designer dedicated to authentic craftsmanship and the use of local materials. Drawing inspiration from ancient archetypes and timeless forms, he translates these influences into simple, pure designs that speak to both heritage and modernity. His work reflects a profound appreciation for the material world and the rich narratives embedded in traditional craftsmanship.',
+    'cas.bio.p2':  'Each piece he creates by hand in Belgium bridges the gap between tradition and contemporary design, emphasizing sustainability, tactile quality, and cultural continuity. Cas\'s process involves deconstructing archetypes and a deep respect for the natural characteristics of his chosen materials, resulting in objects that are both functional and poetic.',
+
+    'edo.label':   'Sculpture · b. 2000',
+    'edo.bio.p1':  'After an abrupt stop to his cycling career, Edo Maas (2000) began searching for new goals. In 2021, he enrolled at the Willem de Kooning Academy in Rotterdam. What started as an interest in art soon grew into a profound artistic pursuit. Now working from his studio in Antwerp, Maas creates sculptures that explore the human condition.',
+    'edo.bio.p2':  'His works capture moments of raw emotion, conveyed through the visual interplay of the human figure in compelling compositions. In this way, he tells his own story. Over time Maas has developed a distinctive artistic language that is both deeply personal and universally resonant.',
+
+    'jean.label':   'Painting · b. 1955',
+    'jean.bio.p1':  'Jean De Groote (1955) is primarily a painting philosopher, or perhaps it\'s the other way around: a philosophizing painter? His large canvases are translations of a way of thinking, a visual quest to see, look at, and understand the world around us. In his oeuvre, "things come into being," as philosopher Eric Bolle puts it. Their most banal form of existence is transformed by Jean into objects with a sacred meaning, rendered in oil on canvas.',
+    'jean.bio.p2':  'He searches for the small, for "even the least still proves to be something; nothing is insignificant." For forty years, he has been quietly and steadily building a coherent, contemplative body of work from his monastic cell in Nazareth.',
   },
 
   nl: {
@@ -451,6 +471,26 @@ const I18N = {
     'william.label':  'Schilderkunst · geb. 1993',
     'william.bio.p1': 'William Ludwig Lutgens is een Belgische schilder wiens werk droomachtige beelden vermengt om de relatie tussen ego en media-invloed te verkennen. Zijn praktijk onderzoekt hoe het zelfbeeld wordt gevormd, en vervormd, door culturele representatie, reclame en het verzadigde visuele landschap van het hedendaagse leven.',
     'william.bio.p2': 'Met internationale tentoonstellingen in Europa en daarbuiten sinds 2017 heeft Lutgens een onderscheidende visuele taal ontwikkeld die zich bevindt tussen het vertrouwde en het onheilspellende. Zijn doeken trekken kijkers in ruimtes waar identiteit vloeibaar wordt.',
+
+    'emile.label':   'Schilderkunst · geb. 2001',
+    'emile.bio.p1':  'Emile Desweemer (2001) brengt een voorstelling van hoe schilderkunst zware thema\'s op speelse wijze kan visualiseren. Desweemers schilderijen bieden een bredere blik op hoe de kunstenaar omgaat met thema\'s als rouw, pijn en aanvaarding. De werken zijn niet alleen individualistisch, maar wekken ook een gevoel van herkenning op. De toeschouwer wordt meegenomen op een emotionele reis, met aandacht voor het contrast tussen abstracte en figuratieve kunst.',
+    'emile.bio.p2':  'Het werk van Emile Desweemer straalt een mooie schijn van melancholie uit, waarbij duisternis vaak aanwezig is als ondertoon. De beelden zijn vaak opgebouwd vanuit een collage-vorm, samengesteld uit verschillende fragmenten uit uiteenlopende scenario\'s. De kunstenaar beschouwt zijn werk als een representatie van een herinnering. Desweemers werk heeft vaak een onheilspellende sfeer, als een ramp die staat te wachten.',
+
+    'orlando.label':  'Schilderkunst · Tekening · geb. 1994',
+    'orlando.bio.p1': 'Orlando Gruwez (1994) is een schilder en af en toe maker van meubels en sculpturen. Met oude boeken, encyclopedieën, postkaarten, verzamelde prenten en zelfgemaakte foto\'s zoekt hij naar een eigen beeldtaal. Vergankelijkheid is een belangrijk thema doorheen zijn werk. Hij werkt voornamelijk met olieverf, en de laatste jaren richt hij zich steeds meer op tekenen.',
+    'orlando.bio.p2': 'Tijdens het middelbaar volgde hij een richting beeldende kunsten, wat zijn interesse in kunst aanwakkerde. Daarna voltooide hij een opleiding hout en meubelmakerij aan Goca Gent, waarna hij interieurinrichting studeerde aan LUCA School of Arts Gent, afstuderend in 2017. Sindsdien schildert hij onverminderd verder en nam hij deel aan diverse tentoonstellingen.',
+
+    'cas.label':   'Design · Vakmanschap · geb. 2000',
+    'cas.bio.p1':  'Cas Reynders (2000) is een ontwerper die zich toelegt op authentiek vakmanschap en het gebruik van lokale materialen. Geïnspireerd door oude archetypen en tijdloze vormen vertaalt hij deze invloeden in eenvoudige, pure ontwerpen die zowel erfgoed als moderniteit aanspreken. Zijn werk getuigt van een diepe waardering voor de materiële wereld en de rijke verhalen die vervat zijn in traditioneel vakmanschap.',
+    'cas.bio.p2':  'Elk stuk dat hij met de hand maakt in België overbrugt de kloof tussen traditie en hedendaags design, met nadruk op duurzaamheid, tactiele kwaliteit en culturele continuïteit. Het proces van Cas omvat het deconstrueren van archetypen en een diep respect voor de natuurlijke kenmerken van zijn gekozen materialen, wat resulteert in objecten die zowel functioneel als poëtisch zijn.',
+
+    'edo.label':   'Sculptuur · geb. 2000',
+    'edo.bio.p1':  'Na een abrupt einde aan zijn wielercarrière begon Edo Maas (2000) op zoek te gaan naar nieuwe doelen. In 2021 schreef hij zich in aan de Willem de Kooning Academie in Rotterdam. Wat begon als een interesse in kunst groeide al snel uit tot een diepgaand artistiek streven. Vanuit zijn atelier in Antwerpen creëert Maas sculpturen die de menselijke conditie verkennen.',
+    'edo.bio.p2':  'Zijn werken vangen momenten van rauwe emotie, overgebracht door het visueel samenspel van de menselijke figuur in boeiende composities. Op die manier vertelt hij zijn eigen verhaal. In de loop der tijd heeft Maas een onderscheidende artistieke taal ontwikkeld die zowel diep persoonlijk als universeel resonerend is.',
+
+    'jean.label':   'Schilderkunst · geb. 1955',
+    'jean.bio.p1':  'Jean De Groote (1955) is in de eerste plaats een schilderfilosoof, of misschien is het andersom: een filosoferende schilder? Zijn grote doeken zijn vertalingen van een manier van denken, een visuele zoektocht om de wereld rondom ons te zien, te bekijken en te begrijpen. In zijn oeuvre "komen dingen tot stand", zoals filosoof Eric Bolle het verwoordt. Hun meest banale bestaansvorm wordt door Jean omgetoverd tot objecten met een heilige betekenis, uitgevoerd in olie op doek.',
+    'jean.bio.p2':  'Hij zoekt het kleine, want "zelfs het minste bewijst nog iets te zijn; niets is onbeduidend." Al veertig jaar bouwt hij stil en gestaag aan een coherent, contemplatief oeuvre vanuit zijn kloostercel in Nazareth.',
   },
 
   fr: {
@@ -675,6 +715,26 @@ const I18N = {
     'william.label':  'Peinture · né 1993',
     'william.bio.p1': "William Ludwig Lutgens est un peintre belge dont l'œuvre mêle des images oniriques explorant la relation entre l'ego et l'influence des médias. Sa pratique examine comment l'image de soi est façonnée, et déformée, par la représentation culturelle, la publicité et le paysage visuel saturé de la vie contemporaine.",
     'william.bio.p2': "Avec des expositions internationales en Europe et au-delà depuis 2017, Lutgens a développé un langage visuel distinctif qui se situe entre le familier et l'inquiétant. Ses toiles attirent les spectateurs dans des espaces où l'identité devient fluide.",
+
+    'emile.label':   'Peinture · né 2001',
+    'emile.bio.p1':  "Emile Desweemer (2001) propose une représentation de la façon dont la peinture peut visualiser de manière ludique des thèmes lourds. Les peintures de Desweemer offrent une vision plus large de la manière dont l'artiste traite des thèmes tels que le deuil, la douleur et l'acceptation. Les œuvres évoquent également un sentiment de reconnaissance, emmenant le spectateur dans un voyage émotionnel centré sur le contraste entre art abstrait et figuratif.",
+    'emile.bio.p2':  "L'œuvre d'Emile Desweemer dégage une belle apparence de mélancolie, dans laquelle l'obscurité est souvent présente comme sous-entendu. Les images sont souvent construites sous forme de collage, composé de divers fragments de différents scénarios. L'artiste considère son travail comme une représentation d'un souvenir. L'œuvre de Desweemer dégage souvent une atmosphère inquiétante, comme une catastrophe sur le point de se produire.",
+
+    'orlando.label':  'Peinture · Dessin · né 1994',
+    'orlando.bio.p1': "Orlando Gruwez (1994) est un peintre et parfois créateur de meubles et sculptures. Utilisant de vieux livres, encyclopédies, cartes postales, gravures collectées et photographies personnelles, il recherche son propre langage visuel. La transience est un thème important dans son œuvre. Il travaille principalement à l'huile et se concentre de plus en plus sur le dessin.",
+    'orlando.bio.p2': "Au lycée, il a suivi un cursus en arts visuels, qui a éveillé son intérêt pour l'art. Il a ensuite suivi une formation en bois et menuiserie à Goca Gent, avant d'étudier le design d'intérieur à la LUCA School of Arts de Gand, diplôme obtenu en 2017. Depuis, il continue de peindre et a participé à de nombreuses expositions collectives et en galerie.",
+
+    'cas.label':   'Design · Artisanat · né 2000',
+    'cas.bio.p1':  "Cas Reynders (2000) est un designer dédié à l'artisanat authentique et à l'utilisation de matériaux locaux. S'inspirant d'archétypes anciens et de formes intemporelles, il traduit ces influences en designs simples et purs qui parlent à la fois du patrimoine et de la modernité. Son travail reflète une profonde appréciation du monde matériel et des riches récits intégrés dans l'artisanat traditionnel.",
+    'cas.bio.p2':  "Chaque pièce qu'il crée à la main en Belgique comble le fossé entre la tradition et le design contemporain, mettant l'accent sur la durabilité, la qualité tactile et la continuité culturelle. Le processus de Cas consiste à déconstruire des archétypes avec un profond respect pour les caractéristiques naturelles de ses matériaux, donnant des objets à la fois fonctionnels et poétiques.",
+
+    'edo.label':   'Sculpture · né 2000',
+    'edo.bio.p1':  "Après un arrêt abrupt de sa carrière cycliste, Edo Maas (2000) a commencé à chercher de nouveaux objectifs. En 2021, il s'est inscrit à la Willem de Kooning Academy de Rotterdam. Ce qui a commencé comme un intérêt pour l'art est rapidement devenu une quête artistique profonde. Travaillant depuis son atelier à Anvers, Maas crée des sculptures qui explorent la condition humaine.",
+    'edo.bio.p2':  "Ses œuvres capturent des moments d'émotion brute, transmis à travers l'interaction visuelle de la figure humaine dans des compositions saisissantes. Ainsi, il raconte sa propre histoire. Au fil du temps, Maas a développé un langage artistique distinctif qui est à la fois profondément personnel et universellement résonnant.",
+
+    'jean.label':   'Peinture · né 1955',
+    'jean.bio.p1':  "Jean De Groote (1955) est avant tout un philosophe de la peinture, ou peut-être est-ce l'inverse: un peintre philosophant? Ses grandes toiles sont des traductions d'une façon de penser, une quête visuelle pour voir, regarder et comprendre le monde qui nous entoure. Dans son œuvre, \"les choses prennent forme\", comme le dit le philosophe Eric Bolle. Leur forme d'existence la plus banale est transformée par Jean en objets à signification sacrée, rendus à l'huile sur toile.",
+    'jean.bio.p2':  "Il cherche le petit, car \"même le moindre prouve encore être quelque chose; rien n'est insignifiant.\" Depuis quarante ans, il construit silencieusement un corpus d'œuvres cohérent et contemplatif depuis sa cellule monastique à Nazareth.",
   }
 };
 
