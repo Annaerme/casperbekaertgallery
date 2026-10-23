@@ -3,6 +3,18 @@
    Talen: EN | NL | FR
    ═══════════════════════════════════════════ */
 
+/* Current age from a birth date, so the team text never goes out of date */
+function ageFrom(year, month, day) {
+  const born = new Date(year, month - 1, day);
+  const now  = new Date();
+  let age = now.getFullYear() - born.getFullYear();
+  if (now.getMonth() < born.getMonth() ||
+      (now.getMonth() === born.getMonth() && now.getDate() < born.getDate())) age--;
+  return age;
+}
+const AGE_CASPER = ageFrom(2005, 6, 23);  // 23/06/2005
+const AGE_ANNA   = ageFrom(2004, 4, 1);   // 01/04/2004
+
 const I18N = {
 
   en: {
@@ -25,7 +37,7 @@ const I18N = {
 
     /* ── Homepage ── */
     'home.eyebrow':    'Ertvelde, Belgium — Est. 2025',
-    'home.desc':       'A space where contemporary art meets unique places. We collaborate with artists to create projects that transform familiar environments into sites of imagination, dialogue, and discovery.',
+    'home.desc':       'A space where contemporary art meets unique places. We collaborate with artists to create projects that transform familiar environments into sites of imagination, dialogue, and discovery. By bringing art beyond traditional white walls, we offer both artists and audiences a new way to experience creativity: immersive, surprising, and unforgettable.',
     'home.btn.exh':    'Explore Exhibitions',
     'home.btn.art':    'Explore Artists',
     'home.exh.label':  'Exhibitions',
@@ -42,7 +54,7 @@ const I18N = {
     'strip.phone':     'Phone',
 
     /* ── Newsletter ── */
-    'nl.label':        'Updates',
+    'nl.label':        'Mailing list',
     'nl.title':        'Don\'t miss any <em>gallery</em> news',
     'nl.sub':          'New exhibitions, artists and gallery news direct in your inbox.',
     'nl.firstname':    'First name',
@@ -84,6 +96,29 @@ const I18N = {
     /* ── Artist detail ── */
     'art.back':        '← Artists',
     'art.works':       'Selected Works',
+    'aw.works':        'Works',
+    'aw.year':         'Year',
+    'aw.materials':    'Materials',
+    'aw.dimensions':   'Dimensions',
+    'aw.price':        'Price',
+    'aw.sold':         'Sold',
+    'aw.onrequest':    'Price on request',
+    'aw.exhibition':   'Exhibition',
+    'aw.enquire':      'Enquire',
+    'aw.fullpage':     'Open full page',
+    'eq.title':        'Enquiry form',
+    'eq.name':         'Name',
+    'eq.email':        'Email',
+    'eq.phone':        'Phone',
+    'eq.message':      'Message',
+    'eq.newsletter':   'Receive newsletters',
+    'eq.yes':          'Yes',
+    'eq.no':           'No',
+    'eq.send':         'Send enquiry',
+    'eq.required':     '* required fields',
+    'eq.privacy':      'We use the details you give us only to answer your enquiry.',
+    'eq.thanks':       'Thank you — we will get back to you shortly.',
+    'eq.error':        'Your enquiry could not be sent. Please email info@casperbekaertgallery.com.',
 
     /* ── Contact ── */
     'ct.label':        'Get in touch',
@@ -166,6 +201,7 @@ const I18N = {
     'ct.team.title':      'Team',
     'ct.team.role.cur':   'Co-founder & Curator',
     'ct.team.role.dir':   'Co-founder & Managing Director',
+    'ct.team.text':       'Ever since he was young, Casper (' + AGE_CASPER + ') has dreamed of founding his own gallery. Today he studies business administration and is turning that dream into reality, step by step. Anna (' + AGE_ANNA + '), a business engineer with a passion for entrepreneurship, joined him in that dream. Together they are building a gallery that brings art closer to people.',
     'ct.socials.label':   'Socials',
     'ct.form.intro':      'Do you have a question, an interest in collaborating, or need more information? We are happy to help. Feel free to get in touch with us.',
     'ct.form.name':       'Name',
@@ -269,7 +305,7 @@ const I18N = {
 
     /* ── Homepage ── */
     'home.eyebrow':    'Ertvelde, België — Est. 2025',
-    'home.desc':       'Een ruimte waar hedendaagse kunst bijzondere plaatsen ontmoet. Wij werken samen met artiesten aan projecten die vertrouwde omgevingen omvormen tot plaatsen van verbeelding, dialoog en ontdekking.',
+    'home.desc':       'Een ruimte waar hedendaagse kunst bijzondere plaatsen ontmoet. We werken samen met artiesten aan projecten die vertrouwde omgevingen omvormen tot plaatsen van verbeelding, dialoog en ontdekking. Door kunst voorbij de traditionele witte muren te brengen, bieden we zowel artiesten als bezoekers een nieuwe manier om creativiteit te beleven: meeslepend, verrassend en onvergetelijk.',
     'home.btn.exh':    'Tentoonstellingen verkennen',
     'home.btn.art':    'Artiesten verkennen',
     'home.exh.label':  'Tentoonstellingen',
@@ -286,7 +322,7 @@ const I18N = {
     'strip.phone':     'Telefoon',
 
     /* ── Newsletter ── */
-    'nl.label':        'Updates',
+    'nl.label':        'Mailinglijst',
     'nl.title':        'Mis niets van de <em>galerie</em>',
     'nl.sub':          'Nieuwe tentoonstellingen, artiesten en galerie-nieuws direct in je inbox.',
     'nl.firstname':    'Voornaam',
@@ -328,6 +364,29 @@ const I18N = {
     /* ── Artist detail ── */
     'art.back':        '← Artiesten',
     'art.works':       'Geselecteerde werken',
+    'aw.works':        'Werken',
+    'aw.year':         'Jaar',
+    'aw.materials':    'Materialen',
+    'aw.dimensions':   'Afmetingen',
+    'aw.price':        'Prijs',
+    'aw.sold':         'Verkocht',
+    'aw.onrequest':    'Prijs op aanvraag',
+    'aw.exhibition':   'Tentoonstelling',
+    'aw.enquire':      'Informeer',
+    'aw.fullpage':     'Open de volledige pagina',
+    'eq.title':        'Aanvraagformulier',
+    'eq.name':         'Naam',
+    'eq.email':        'E-mail',
+    'eq.phone':        'Telefoon',
+    'eq.message':      'Bericht',
+    'eq.newsletter':   'Nieuwsbrief ontvangen',
+    'eq.yes':          'Ja',
+    'eq.no':           'Nee',
+    'eq.send':         'Aanvraag versturen',
+    'eq.required':     '* verplichte velden',
+    'eq.privacy':      'We gebruiken je gegevens enkel om je aanvraag te beantwoorden.',
+    'eq.thanks':       'Bedankt — we nemen snel contact met je op.',
+    'eq.error':        'Je aanvraag kon niet verstuurd worden. Mail ons op info@casperbekaertgallery.com.',
 
     /* ── Contact ── */
     'ct.label':        'Neem contact op',
@@ -410,6 +469,7 @@ const I18N = {
     'ct.team.title':      'Team',
     'ct.team.role.cur':   'Mede-oprichter & Curator',
     'ct.team.role.dir':   'Mede-oprichter & Algemeen Directeur',
+    'ct.team.text':       'Van jongs af aan droomt Casper (' + AGE_CASPER + ') ervan een eigen galerij op te richten. Vandaag studeert hij handelswetenschappen en maakt hij van die droom stap voor stap werkelijkheid. Anna (' + AGE_ANNA + '), handelsingenieur met een passie voor ondernemerschap, vervoegde hem in die droom. Samen bouwen ze aan een galerij die kunst dichter bij de mensen brengt.',
     'ct.socials.label':   'Sociale media',
     'ct.form.intro':      'Heb je een vraag, interesse in samenwerking, of heb je meer informatie nodig? We helpen je graag. Neem gerust contact met ons op.',
     'ct.form.name':       'Naam',
@@ -513,7 +573,7 @@ const I18N = {
 
     /* ── Homepage ── */
     'home.eyebrow':    'Ertvelde, Belgique — Est. 2025',
-    'home.desc':       'Un espace où l\'art contemporain rencontre des lieux uniques. Nous collaborons avec des artistes pour créer des projets qui transforment des environnements familiers en sites d\'imagination, de dialogue et de découverte.',
+    'home.desc':       'Un espace où l\'art contemporain rencontre des lieux uniques. Nous collaborons avec des artistes pour créer des projets qui transforment des environnements familiers en lieux d\'imagination, de dialogue et de découverte. En faisant sortir l\'art des murs blancs traditionnels, nous offrons aux artistes comme au public une nouvelle façon de vivre la création : immersive, surprenante et inoubliable.',
     'home.btn.exh':    'Explorer les expositions',
     'home.btn.art':    'Explorer les artistes',
     'home.exh.label':  'Expositions',
@@ -530,7 +590,7 @@ const I18N = {
     'strip.phone':     'Téléphone',
 
     /* ── Newsletter ── */
-    'nl.label':        'Actualités',
+    'nl.label':        'Liste de diffusion',
     'nl.title':        'Ne manquez rien de la <em>galerie</em>',
     'nl.sub':          'Nouvelles expositions, artistes et actualités de la galerie directement dans votre boîte mail.',
     'nl.firstname':    'Prénom',
@@ -572,6 +632,29 @@ const I18N = {
     /* ── Artist detail ── */
     'art.back':        '← Artistes',
     'art.works':       'Œuvres sélectionnées',
+    'aw.works':        'Œuvres',
+    'aw.year':         'Année',
+    'aw.materials':    'Matériaux',
+    'aw.dimensions':   'Dimensions',
+    'aw.price':        'Prix',
+    'aw.sold':         'Vendu',
+    'aw.onrequest':    'Prix sur demande',
+    'aw.exhibition':   'Exposition',
+    'aw.enquire':      'Se renseigner',
+    'aw.fullpage':     'Ouvrir la page complète',
+    'eq.title':        'Formulaire de demande',
+    'eq.name':         'Nom',
+    'eq.email':        'E-mail',
+    'eq.phone':        'Téléphone',
+    'eq.message':      'Message',
+    'eq.newsletter':   'Recevoir la newsletter',
+    'eq.yes':          'Oui',
+    'eq.no':           'Non',
+    'eq.send':         'Envoyer la demande',
+    'eq.required':     '* champs obligatoires',
+    'eq.privacy':      'Nous utilisons vos données uniquement pour répondre à votre demande.',
+    'eq.thanks':       'Merci — nous vous recontactons rapidement.',
+    'eq.error':        'Votre demande n\'a pas pu être envoyée. Écrivez-nous à info@casperbekaertgallery.com.',
 
     /* ── Contact ── */
     'ct.label':        'Prendre contact',
@@ -654,6 +737,7 @@ const I18N = {
     'ct.team.title':      'Équipe',
     'ct.team.role.cur':   'Co-fondateur & Curateur',
     'ct.team.role.dir':   'Co-fondatrice & Directrice Générale',
+    'ct.team.text':       'Depuis son plus jeune âge, Casper (' + AGE_CASPER + ' ans) rêve de fonder sa propre galerie. Aujourd\'hui étudiant en sciences commerciales, il transforme ce rêve en réalité, pas à pas. Anna (' + AGE_ANNA + ' ans), ingénieure de gestion passionnée d\'entrepreneuriat, l\'a rejoint dans ce rêve. Ensemble, ils construisent une galerie qui rapproche l\'art des gens.',
     'ct.socials.label':   'Réseaux sociaux',
     'ct.form.intro':      "Vous avez une question, un intérêt pour une collaboration, ou besoin de plus d'informations? Nous sommes heureux de vous aider. N'hésitez pas à nous contacter.",
     'ct.form.name':       'Nom',

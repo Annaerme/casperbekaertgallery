@@ -2,6 +2,11 @@
    CASPER BEKAERT GALLERY — main.js
    ═══════════════════════════════════════════ */
 
+// De scroll-animaties pas aanzetten wanneer we zeker weten dat ze werken.
+if ('IntersectionObserver' in window) {
+  document.documentElement.dataset.anim = 'on';
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 
   // ── Nav scroll behaviour ──────────────────
@@ -22,6 +27,14 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
   reveals.forEach(el => revealObserver.observe(el));
+
+  // Vangnet: mocht de waarnemer niets melden, toon alles alsnog.
+  setTimeout(() => {
+    document.querySelectorAll('.reveal:not(.in)').forEach(el => {
+      const r = el.getBoundingClientRect();
+      if (r.top < window.innerHeight) el.classList.add('in');
+    });
+  }, 2500);
 
   // ── Newsletter form → Supabase ───────────
   const SUPABASE_URL = 'https://wojavtiwvveynjbkwotd.supabase.co';

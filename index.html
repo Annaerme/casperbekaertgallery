@@ -3,154 +3,191 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Casper Bekaert Gallery — A space where contemporary art meets unique places. Immersive exhibitions in Ertvelde." />
   <title>Casper Bekaert Gallery</title>
+  <meta name="description" content="Casper Bekaert Gallery — Casper Bekaert Gallery, contemporary art in unexpected places, Ertvelde, Belgium." />
+  <link rel="canonical" href="https://casperbekaertgallery.com/" />
+  <meta property="og:site_name" content="Casper Bekaert Gallery" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Casper Bekaert Gallery" />
+  <meta property="og:image" content="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/bakery/bakery-01.jpg" />
+  <meta property="og:description" content="Casper Bekaert Gallery — Casper Bekaert Gallery, contemporary art in unexpected places, Ertvelde, Belgium." />
+  <meta property="og:url" content="https://casperbekaertgallery.com/" />
+  <meta property="og:locale" content="en_BE" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=5" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600&family=Cormorant+Garamond:wght@300;400&family=Jost:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css?v=45" />
   <style>
-    .home-quotes {
-      height: calc(100vh - 68px);
+    /* Eerste scherm: alles gecentreerd. De inschrijving staat eronder
+       en verschijnt wanneer je naar beneden scrolt. */
+    .home-stage {
+      min-height: calc(100vh - 68px);
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-start;
-      padding: 120px var(--pad) 0;
-      border-top: 1px solid #E8E8E8;
-      gap: 48px;
-    }
-    .home-quote-display {
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: clamp(22px, 5vw, 48px);
-      font-weight: 300;
-      font-style: italic;
-      color: #111111;
-      line-height: 1.5;
-      letter-spacing: -0.01em;
-      text-align: center;
-      width: 100%;
-      max-width: 860px;
-      opacity: 0;
-    }
-    .home-quotes-ctas {
-      display: flex;
-      gap: 40px;
-      align-items: center;
-    }
-    .home-quotes-cta {
-      font-family: 'Jost', Arial, sans-serif;
-      font-size: 10px;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: #999999;
-      text-decoration: none;
-      transition: opacity 0.3s;
-    }
-    .home-quotes-cta:hover {
-      opacity: 0.5;
-    }
-
-    /* Mailing list popup */
-    .ml-popup {
-      position: fixed;
-      inset: 0;
-      background: rgba(17,17,17,0.5);
-      z-index: 900;
-      display: flex;
-      align-items: center;
       justify-content: center;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.5s ease;
+      text-align: center;
+      padding: 100px var(--pad);
     }
-    .ml-popup--open {
-      opacity: 1;
-      pointer-events: auto;
-    }
-    .ml-popup-box {
-      background: #ffffff;
-      padding: 52px 56px;
-      max-width: 440px;
-      width: 90%;
-      position: relative;
-    }
-    .ml-popup-close {
-      position: absolute;
-      top: 18px;
-      right: 22px;
-      background: none;
-      border: none;
-      font-size: 12px;
-      color: #bbbbbb;
-      cursor: pointer;
-      font-family: 'Jost', sans-serif;
-    }
-    .ml-popup-close:hover { color: #999999; }
-    .ml-popup-label {
-      font-family: 'Jost', sans-serif;
-      font-size: 9px;
-      letter-spacing: 0.25em;
-      text-transform: uppercase;
-      color: #bbbbbb;
-      margin-bottom: 18px;
-    }
-    .ml-popup-title {
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: clamp(26px, 3.5vw, 40px);
+    .home-stage-name {
+      font-family: var(--logo);
+      font-size: clamp(30px, 4vw, 54px);
       font-weight: 300;
-      line-height: 1.15;
-      color: #111111;
-      margin-bottom: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--black);
+      line-height: 1.25;
+      margin-bottom: 40px;
+      text-wrap: balance;
     }
-    .ml-popup-title em { font-style: italic; }
-    .ml-popup-sub {
-      font-family: 'Jost', sans-serif;
+    .home-stage-text {
+      font-family: var(--sans);
+      font-size: clamp(15px, 1.25vw, 18px);
+      font-weight: 300;
+      line-height: 1.95;
+      color: var(--dark);
+      max-width: 760px;
+      margin-bottom: 52px;
+    }
+    .home-stage-ctas {
+      display: flex;
+      gap: 14px 52px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    /* Geen knoppen maar fijne tekstlinks met een haarlijntje eronder. */
+    .home-stage-btn {
+      font-family: var(--sans);
       font-size: 13px;
       font-weight: 300;
-      color: #bbbbbb;
-      line-height: 1.7;
-      margin-bottom: 28px;
+      letter-spacing: 0.1em;
+      color: var(--dark);
+      padding-bottom: 7px;
+      border-bottom: 1px solid var(--border);
+      transition: color 0.3s var(--ease), border-color 0.3s var(--ease);
     }
-    .ml-popup-form { display: flex; flex-direction: column; gap: 8px; }
-    .ml-popup-form input {
-      border: none;
-      border-bottom: 1px solid #E8E8E8;
-      padding: 9px 0;
-      font-family: 'Jost', sans-serif;
-      font-size: 14px;
-      font-weight: 300;
-      color: #111111;
-      outline: none;
-      transition: border-color 0.2s;
-      background: transparent;
+    .home-stage-btn:hover { color: var(--black); border-color: var(--black); }
+
+    /* Inschrijving */
+    .home-subscribe {
+      border-top: 1px solid var(--border);
+      padding: 110px var(--pad) 120px;
+      text-align: center;
     }
-    .ml-popup-form input::placeholder { color: #cccccc; }
-    .ml-popup-form input:focus { border-color: #999999; }
-    .ml-popup-form button {
-      margin-top: 20px;
-      padding: 0 0 4px 0;
-      background: none;
-      color: #999999;
-      border: none;
-      border-bottom: 1px solid #E8E8E8;
-      font-family: 'Jost', sans-serif;
-      font-size: 10px;
-      letter-spacing: 0.2em;
+    .home-subscribe-inner { max-width: 620px; margin: 0 auto; }
+    .home-subscribe-label {
+      font-family: var(--sans);
+      font-size: 11px;
+      letter-spacing: 0.22em;
       text-transform: uppercase;
-      cursor: pointer;
-      align-self: flex-start;
-      transition: color 0.2s, border-color 0.2s;
+      color: var(--gray);
+      margin-bottom: 22px;
     }
-    .ml-popup-form button:hover { color: #111111; border-color: #999999; }
-    .ml-popup-success {
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: 18px;
-      font-style: italic;
-      color: #999999;
-      margin-top: 20px;
+    .home-subscribe-title {
+      font-family: var(--sans);
+      font-size: clamp(20px, 2.1vw, 28px);
+      font-weight: 400;
+      line-height: 1.35;
+      color: var(--black);
+      margin-bottom: 14px;
+      text-wrap: balance;
+    }
+    .home-subscribe-title em { font-style: normal; font-weight: 300; color: var(--gray); }
+    .home-subscribe-sub {
+      font-family: var(--sans);
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 1.9;
+      color: var(--gray);
+      margin-bottom: 44px;
+    }
+    .home-subscribe form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 26px 20px;
+      text-align: left;
+    }
+    .home-subscribe input {
+      border: none;
+      border-bottom: 1px solid var(--border);
+      background: transparent;
+      padding: 10px 0;
+      font-family: var(--sans);
+      font-size: 16px;
+      font-weight: 300;
+      color: var(--black);
+      outline: none;
+      width: 100%;
+      transition: border-color 0.25s;
+    }
+    .home-subscribe input::placeholder { color: #c4c0bb; }
+    .home-subscribe input:focus { border-color: var(--black); }
+    .home-subscribe .full { grid-column: 1 / -1; }
+    .home-subscribe button {
+      grid-column: 1 / -1;
+      justify-self: center;
+      margin-top: 22px;
+      padding: 0 0 7px;
+      background: none;
+      border: none;
+      border-bottom: 1px solid var(--border);
+      font-family: var(--sans);
+      font-size: 13px;
+      font-weight: 300;
+      letter-spacing: 0.1em;
+      color: var(--dark);
+      cursor: pointer;
+      transition: color 0.3s var(--ease), border-color 0.3s var(--ease);
+    }
+    .home-subscribe button:hover { color: var(--black); border-color: var(--black); }
+    .home-subscribe-note {
+      font-family: var(--sans);
+      font-size: 12px;
+      font-weight: 300;
+      color: var(--gray);
+      margin-top: 28px;
+      line-height: 1.7;
+    }
+    #subscribe-success {
+      font-family: var(--sans);
+      font-size: 16px;
+      color: var(--dark);
+      margin-top: 24px;
+    }
+
+    @media (max-width: 768px) {
+      .home-stage { min-height: calc(100vh - 68px); padding: 96px var(--pad) 72px; }
+      .home-stage-name { margin-bottom: 28px; }
+      .home-stage-text { margin-bottom: 40px; }
+      .home-stage-ctas { gap: 20px; flex-direction: column; align-items: center; }
+      .home-subscribe { padding: 76px var(--pad) 88px; }
+      .home-subscribe form { grid-template-columns: 1fr; gap: 22px; }
+
     }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ArtGallery",
+    "name": "Casper Bekaert Gallery",
+    "url": "https://casperbekaertgallery.com/",
+    "email": "info@casperbekaertgallery.com",
+    "telephone": "+32474910089",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Pastorijstraat 20",
+      "postalCode": "9940",
+      "addressLocality": "Ertvelde",
+      "addressCountry": "BE"
+    },
+    "sameAs": [
+      "https://www.instagram.com/casperbekaertgallery",
+      "https://www.facebook.com/people/Casperbekaertgallery/61579598334115/"
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -175,62 +212,34 @@
     </button>
   </nav>
 
-  <!-- MAILING LIST POPUP -->
-  <div id="ml-popup" class="ml-popup" aria-hidden="true">
-    <div class="ml-popup-box">
-      <button class="ml-popup-close" id="ml-popup-close" aria-label="Sluiten">✕</button>
-      <p class="ml-popup-label">Mailing list</p>
-      <h2 class="ml-popup-title">Stay close<br><em>to the gallery</em></h2>
-      <p class="ml-popup-sub">New exhibitions, artists and news — straight to your inbox.</p>
-      <form class="ml-popup-form" id="ml-popup-form" novalidate>
-        <input type="text" placeholder="First name" id="ml-popup-fname" />
-        <input type="text" placeholder="Last name" id="ml-popup-lname" />
-        <input type="email" placeholder="Email address" id="ml-popup-email" required />
-        <button type="submit">Subscribe</button>
-      </form>
-      <p class="ml-popup-success" id="ml-popup-success" style="display:none">Thank you — welcome to the gallery.</p>
-    </div>
-  </div>
 
-  <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
-    <nav class="mobile-nav">
-      <a href="index.html"       class="mobile-nav-link" data-i18n="nav.home">Home</a>
-      <a href="exhibitions.html" class="mobile-nav-link" data-i18n="nav.exhibitions">Exhibitions</a>
-      <a href="artists.html"     class="mobile-nav-link" data-i18n="nav.artists">Artists</a>
-      <a href="press.html"       class="mobile-nav-link" data-i18n="nav.press">Press</a>
-      <a href="contact.html"     class="mobile-nav-link" data-i18n="nav.contact">About</a>
-      <div class="mobile-lang">
-        <button class="mobile-lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
-        <button class="mobile-lang-btn" data-lang="nl" onclick="setLang('nl')">NL</button>
-        <button class="mobile-lang-btn" data-lang="fr" onclick="setLang('fr')">FR</button>
-      </div>
-    </nav>
-  </div>
 
-  <!-- FULL SCREEN HERO -->
-  <div class="hero-fullscreen">
-    <img class="hero-slide active"
-      src="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/distillery/distillery-14.jpg"
-      alt="Gallery in the Distillery"
-      data-credit="Filliers Distillery, Ertvelde">
-    <img class="hero-slide"
-      src="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/bakery/bakery-07.jpg"
-      alt="Gallery in the Bakery"
-      data-credit="Bakkerij Bekaert, Ertvelde">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <div class="hero-left">
-        <h1 class="hero-title">Casper Bekaert Gallery</h1>
-        <div class="hero-ctas">
-          <a href="exhibitions.html" class="hero-btn hero-btn-light">Explore Exhibitions</a>
-          <a href="contact.html" class="hero-btn hero-btn-outline">About Us</a>
-        </div>
+  <main>
+    <section class="home-stage">
+      <h1 class="home-stage-name">Casper Bekaert Gallery</h1>
+      <p class="home-stage-text" data-i18n="home.desc">A space where contemporary art meets unique places. We collaborate with artists to create projects that transform familiar environments into sites of imagination, dialogue, and discovery. By bringing art beyond traditional white walls, we offer both artists and audiences a new way to experience creativity: immersive, surprising, and unforgettable.</p>
+      <div class="home-stage-ctas">
+        <a href="exhibitions.html" class="home-stage-btn" data-i18n="home.btn.exh">Explore Exhibitions</a>
+        <a href="artists.html" class="home-stage-btn" data-i18n="home.btn.art">Explore Artists</a>
       </div>
-      <div class="hero-right">
-        <p class="hero-credit" id="hero-credit">Filliers Distillery, Ertvelde</p>
+    </section>
+
+    <section class="home-subscribe" id="subscribe">
+      <div class="home-subscribe-inner reveal">
+        <p class="home-subscribe-label" data-i18n="nl.label">Mailing list</p>
+        <h2 class="home-subscribe-title" data-i18n="nl.title">Don't miss any <em>gallery</em> news</h2>
+        <p class="home-subscribe-sub" data-i18n="nl.sub">New exhibitions, artists and gallery news direct in your inbox.</p>
+        <form id="newsletter-form" novalidate>
+          <input type="text"  placeholder="First name"    data-i18n-ph="nl.firstname" autocomplete="given-name">
+          <input type="text"  placeholder="Last name"     data-i18n-ph="nl.lastname"  autocomplete="family-name">
+          <input type="email" class="full" placeholder="Email address" data-i18n-ph="nl.email" required autocomplete="email">
+          <button type="submit" data-i18n="nl.submit">Subscribe</button>
+        </form>
+        <p id="subscribe-success" style="display:none" data-i18n="nl.success">Thank you — welcome to the gallery.</p>
+        <p class="home-subscribe-note" data-i18n="nl.privacy">We respect your privacy — no spam, unsubscribe anytime.</p>
       </div>
-    </div>
-  </div>
+    </section>
+  </main>
 
   <!-- FOOTER -->
   <footer>
@@ -275,96 +284,7 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
-  <script src="js/i18n.js?v=7"></script>
-  <script>
-    const heroSlides = document.querySelectorAll('.hero-slide');
-    const heroCredit = document.getElementById('hero-credit');
-    let heroCurrent = 0;
-    setInterval(() => {
-      heroSlides[heroCurrent].classList.remove('active');
-      heroCurrent = (heroCurrent + 1) % heroSlides.length;
-      heroSlides[heroCurrent].classList.add('active');
-      if (heroCredit) heroCredit.textContent = heroSlides[heroCurrent].dataset.credit || '';
-    }, 5000);
-  </script>
-  <script>
-    // Mailing list popup
-    (function () {
-      const popup  = document.getElementById('ml-popup');
-      const close  = document.getElementById('ml-popup-close');
-      const form   = document.getElementById('ml-popup-form');
-      const succ   = document.getElementById('ml-popup-success');
-      const SUPA_URL = 'https://wojavtiwvveynjbkwotd.supabase.co';
-      const SUPA_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndvamF2dGl3dnZleW5qYmt3b3RkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk5Mjk1NjksImV4cCI6MjA5NTUwNTU2OX0.9LsqSstJPEvwn3BHR6drEaf3PP_ZR3v5jMvdSkc8jO8';
-
-      function closePopup() {
-        popup.classList.remove('ml-popup--open');
-      }
-
-      if (!localStorage.getItem('ml-subscribed')) {
-        setTimeout(function () {
-          popup.classList.add('ml-popup--open');
-        }, 10000);
-      }
-
-      close.addEventListener('click', closePopup);
-      popup.addEventListener('click', function (e) {
-        if (e.target === popup) closePopup();
-      });
-
-      form.addEventListener('submit', async function (e) {
-        e.preventDefault();
-        const payload = {
-          first_name: document.getElementById('ml-popup-fname').value.trim(),
-          last_name:  document.getElementById('ml-popup-lname').value.trim(),
-          email:      document.getElementById('ml-popup-email').value.trim(),
-        };
-        try {
-          await fetch(SUPA_URL + '/rest/v1/subscribers', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'apikey': SUPA_KEY, 'Authorization': 'Bearer ' + SUPA_KEY, 'Prefer': 'return=minimal' },
-            body: JSON.stringify(payload),
-          });
-        } catch (err) { console.error(err); }
-        localStorage.setItem('ml-subscribed', '1');
-        form.style.display = 'none';
-        succ.style.display = 'block';
-        setTimeout(closePopup, 3000);
-      });
-    })();
-  </script>
-  <script>
-    (function () {
-      const texts = [
-        "“What happens when a space, devoted to the kneading, rising and baking of bread, empties itself of all its objects — and what if that very place becomes where art makes its entrance?”",
-        "“Art should come closer to people. Accessible, tangible, and made with whatever is at hand.”",
-        "“Where labour once produced the smell of fresh bread, a different kind of alchemy now takes place: a merging of images, materials and ideas.”",
-        "“Places where contrasts do not collide but complement, where individual works find meaning within the whole.”",
-        "“A search for balance — between form and content, between intuition and concept, between distance and proximity.”",
-        "“These spaces invite the viewer to look with an open eye. To discover how, in unexpected rooms, new connections can form.”"
-      ];
-      const el = document.getElementById('home-quote-display');
-      let cur = 0;
-
-      function show(i) {
-        el.style.transition = 'none';
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(16px)';
-        setTimeout(function () {
-          el.textContent = texts[i];
-          el.style.transition = 'opacity 1.8s ease, transform 1.8s ease';
-          el.style.opacity = '1';
-          el.style.transform = 'translateY(0)';
-        }, 600);
-      }
-
-      show(0);
-      setInterval(function () {
-        cur = (cur + 1) % texts.length;
-        show(cur);
-      }, 9000);
-    })();
-  </script>
+  <script src="js/main.js?v=2"></script>
+  <script src="js/i18n.js?v=18"></script>
 </body>
 </html>

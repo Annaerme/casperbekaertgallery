@@ -1,6 +1,11 @@
 {
+  "enableAllProjectMcpServers": true,
   "enabledMcpjsonServers": [
     "supabase"
   ],
-  "enableAllProjectMcpServers": true
+  "permissions": {
+    "allow": [
+      "Bash(open -a \"Visual Studio Code\" ~/Documents/GitHub/amorpha-app)"
+    ]
+  }
 }

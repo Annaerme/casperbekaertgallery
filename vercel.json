@@ -1,0 +1,1397 @@
+{
+  "cleanUrls": false,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/alex-brassart",
+      "destination": "/alex-brassart.html",
+      "permanent": true
+    },
+    {
+      "source": "/alex-brassart-building-tension",
+      "destination": "/alex-brassart-building-tension.html",
+      "permanent": true
+    },
+    {
+      "source": "/alex-brassart-interstice",
+      "destination": "/alex-brassart-interstice.html",
+      "permanent": true
+    },
+    {
+      "source": "/alex-brassart-just-do-it",
+      "destination": "/alex-brassart-just-do-it.html",
+      "permanent": true
+    },
+    {
+      "source": "/alex-brassart-untitled-1",
+      "destination": "/alex-brassart-untitled-1.html",
+      "permanent": true
+    },
+    {
+      "source": "/alex-brassart-untitled-2",
+      "destination": "/alex-brassart-untitled-2.html",
+      "permanent": true
+    },
+    {
+      "source": "/alex-brassart-untitled-3",
+      "destination": "/alex-brassart-untitled-3.html",
+      "permanent": true
+    },
+    {
+      "source": "/alex-brassart-untitled-4",
+      "destination": "/alex-brassart-untitled-4.html",
+      "permanent": true
+    },
+    {
+      "source": "/alex-brassart-untitled-5",
+      "destination": "/alex-brassart-untitled-5.html",
+      "permanent": true
+    },
+    {
+      "source": "/alex-brassart-untitled-6",
+      "destination": "/alex-brassart-untitled-6.html",
+      "permanent": true
+    },
+    {
+      "source": "/alex-brassart-untitled-7",
+      "destination": "/alex-brassart-untitled-7.html",
+      "permanent": true
+    },
+    {
+      "source": "/alex-brassart-untitled-8",
+      "destination": "/alex-brassart-untitled-8.html",
+      "permanent": true
+    },
+    {
+      "source": "/alex-brassart-untitled-9",
+      "destination": "/alex-brassart-untitled-9.html",
+      "permanent": true
+    },
+    {
+      "source": "/alex1",
+      "destination": "/alex-brassart-interstice.html",
+      "permanent": true
+    },
+    {
+      "source": "/alex2",
+      "destination": "/alex-brassart-untitled-7.html",
+      "permanent": true
+    },
+    {
+      "source": "/alex4",
+      "destination": "/alex-brassart-untitled-8.html",
+      "permanent": true
+    },
+    {
+      "source": "/alex5",
+      "destination": "/alex-brassart-untitled-9.html",
+      "permanent": true
+    },
+    {
+      "source": "/alexbrassart1",
+      "destination": "/alex-brassart-untitled-1.html",
+      "permanent": true
+    },
+    {
+      "source": "/alexbrassart2",
+      "destination": "/alex-brassart-building-tension.html",
+      "permanent": true
+    },
+    {
+      "source": "/alexbrassart3",
+      "destination": "/alex-brassart-untitled-4.html",
+      "permanent": true
+    },
+    {
+      "source": "/alexbrassart4",
+      "destination": "/alex-brassart-untitled-2.html",
+      "permanent": true
+    },
+    {
+      "source": "/alexbrassart5",
+      "destination": "/alex-brassart-untitled-3.html",
+      "permanent": true
+    },
+    {
+      "source": "/alexbrassart6",
+      "destination": "/alex-brassart-untitled-5.html",
+      "permanent": true
+    },
+    {
+      "source": "/alexbrassart7",
+      "destination": "/alex-brassart-untitled-6.html",
+      "permanent": true
+    },
+    {
+      "source": "/alexbrassart8",
+      "destination": "/alex-brassart-just-do-it.html",
+      "permanent": true
+    },
+    {
+      "source": "/arno-camps",
+      "destination": "/arno-camps.html",
+      "permanent": true
+    },
+    {
+      "source": "/arno-camps-krauweltrek",
+      "destination": "/arno-camps-krauweltrek.html",
+      "permanent": true
+    },
+    {
+      "source": "/arno-camps-mergelsluip",
+      "destination": "/arno-camps-mergelsluip.html",
+      "permanent": true
+    },
+    {
+      "source": "/arno-camps-narren-knarsen",
+      "destination": "/arno-camps-narren-knarsen.html",
+      "permanent": true
+    },
+    {
+      "source": "/arno-camps-omtrekselverlof-in-glorie",
+      "destination": "/arno-camps-omtrekselverlof-in-glorie.html",
+      "permanent": true
+    },
+    {
+      "source": "/arno-camps-scharrelkoot",
+      "destination": "/arno-camps-scharrelkoot.html",
+      "permanent": true
+    },
+    {
+      "source": "/arno-camps-schuurbries",
+      "destination": "/arno-camps-schuurbries.html",
+      "permanent": true
+    },
+    {
+      "source": "/arno-camps-sijpelstoppen",
+      "destination": "/arno-camps-sijpelstoppen.html",
+      "permanent": true
+    },
+    {
+      "source": "/arno-camps-trippelraar",
+      "destination": "/arno-camps-trippelraar.html",
+      "permanent": true
+    },
+    {
+      "source": "/arnocamps1",
+      "destination": "/arno-camps-trippelraar.html",
+      "permanent": true
+    },
+    {
+      "source": "/arnocamps2",
+      "destination": "/arno-camps-scharrelkoot.html",
+      "permanent": true
+    },
+    {
+      "source": "/arnocamps3",
+      "destination": "/arno-camps-krauweltrek.html",
+      "permanent": true
+    },
+    {
+      "source": "/arnocamps4",
+      "destination": "/arno-camps-mergelsluip.html",
+      "permanent": true
+    },
+    {
+      "source": "/arnocamps5",
+      "destination": "/arno-camps-schuurbries.html",
+      "permanent": true
+    },
+    {
+      "source": "/arnocamps6",
+      "destination": "/arno-camps-narren-knarsen.html",
+      "permanent": true
+    },
+    {
+      "source": "/arnocamps7",
+      "destination": "/arno-camps-omtrekselverlof-in-glorie.html",
+      "permanent": true
+    },
+    {
+      "source": "/arnocamps8",
+      "destination": "/arno-camps-sijpelstoppen.html",
+      "permanent": true
+    },
+    {
+      "source": "/artists",
+      "destination": "/artists.html",
+      "permanent": true
+    },
+    {
+      "source": "/cas-reynders",
+      "destination": "/cas-reynders.html",
+      "permanent": true
+    },
+    {
+      "source": "/cas-reynders-cabinet",
+      "destination": "/cas-reynders-cabinet.html",
+      "permanent": true
+    },
+    {
+      "source": "/cas-reynders-carafes",
+      "destination": "/cas-reynders-carafes.html",
+      "permanent": true
+    },
+    {
+      "source": "/cas-reynders-shell",
+      "destination": "/cas-reynders-shell.html",
+      "permanent": true
+    },
+    {
+      "source": "/cas1",
+      "destination": "/cas-reynders-cabinet.html",
+      "permanent": true
+    },
+    {
+      "source": "/cas2",
+      "destination": "/cas-reynders-carafes.html",
+      "permanent": true
+    },
+    {
+      "source": "/cas3",
+      "destination": "/cas-reynders-shell.html",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/edo-maas",
+      "destination": "/edo-maas.html",
+      "permanent": true
+    },
+    {
+      "source": "/edo-maas-gestalte",
+      "destination": "/edo-maas-gestalte.html",
+      "permanent": true
+    },
+    {
+      "source": "/edo-maas-kleine-dood",
+      "destination": "/edo-maas-kleine-dood.html",
+      "permanent": true
+    },
+    {
+      "source": "/edo-maas-koelcel",
+      "destination": "/edo-maas-koelcel.html",
+      "permanent": true
+    },
+    {
+      "source": "/edo-maas-kop-1",
+      "destination": "/edo-maas-kop-1.html",
+      "permanent": true
+    },
+    {
+      "source": "/edo-maas-kop-2",
+      "destination": "/edo-maas-kop-2.html",
+      "permanent": true
+    },
+    {
+      "source": "/edo-maas-kop-3",
+      "destination": "/edo-maas-kop-3.html",
+      "permanent": true
+    },
+    {
+      "source": "/edo-maas-kop-4",
+      "destination": "/edo-maas-kop-4.html",
+      "permanent": true
+    },
+    {
+      "source": "/edo-maas-kop-5",
+      "destination": "/edo-maas-kop-5.html",
+      "permanent": true
+    },
+    {
+      "source": "/edo-maas-pile-up",
+      "destination": "/edo-maas-pile-up.html",
+      "permanent": true
+    },
+    {
+      "source": "/edo1",
+      "destination": "/edo-maas-kop-1.html",
+      "permanent": true
+    },
+    {
+      "source": "/edo2",
+      "destination": "/edo-maas-kop-2.html",
+      "permanent": true
+    },
+    {
+      "source": "/edo3",
+      "destination": "/edo-maas-kop-3.html",
+      "permanent": true
+    },
+    {
+      "source": "/edo4",
+      "destination": "/edo-maas-kop-4.html",
+      "permanent": true
+    },
+    {
+      "source": "/edo5",
+      "destination": "/edo-maas-kop-5.html",
+      "permanent": true
+    },
+    {
+      "source": "/edo6",
+      "destination": "/edo-maas-pile-up.html",
+      "permanent": true
+    },
+    {
+      "source": "/edo7",
+      "destination": "/edo-maas-gestalte.html",
+      "permanent": true
+    },
+    {
+      "source": "/edo8",
+      "destination": "/edo-maas-kleine-dood.html",
+      "permanent": true
+    },
+    {
+      "source": "/edo9",
+      "destination": "/edo-maas-koelcel.html",
+      "permanent": true
+    },
+    {
+      "source": "/emile-desweemer",
+      "destination": "/emile-desweemer.html",
+      "permanent": true
+    },
+    {
+      "source": "/emile-desweemer-all-i-wanted-was-to-be-home",
+      "destination": "/emile-desweemer-all-i-wanted-was-to-be-home.html",
+      "permanent": true
+    },
+    {
+      "source": "/emile-desweemer-betrayal-here-is-your-toll",
+      "destination": "/emile-desweemer-betrayal-here-is-your-toll.html",
+      "permanent": true
+    },
+    {
+      "source": "/emile-desweemer-broken-beyond-repair",
+      "destination": "/emile-desweemer-broken-beyond-repair.html",
+      "permanent": true
+    },
+    {
+      "source": "/emile-desweemer-epilogue",
+      "destination": "/emile-desweemer-epilogue.html",
+      "permanent": true
+    },
+    {
+      "source": "/emile-desweemer-es-tu-brute",
+      "destination": "/emile-desweemer-es-tu-brute.html",
+      "permanent": true
+    },
+    {
+      "source": "/emile-desweemer-other-side-of-the-coin",
+      "destination": "/emile-desweemer-other-side-of-the-coin.html",
+      "permanent": true
+    },
+    {
+      "source": "/emile-desweemer-these-changes-are-a-martyr",
+      "destination": "/emile-desweemer-these-changes-are-a-martyr.html",
+      "permanent": true
+    },
+    {
+      "source": "/emile-desweemer-untitled",
+      "destination": "/emile-desweemer-untitled.html",
+      "permanent": true
+    },
+    {
+      "source": "/emile1",
+      "destination": "/emile-desweemer-epilogue.html",
+      "permanent": true
+    },
+    {
+      "source": "/emile2",
+      "destination": "/emile-desweemer-other-side-of-the-coin.html",
+      "permanent": true
+    },
+    {
+      "source": "/emile3",
+      "destination": "/emile-desweemer-untitled.html",
+      "permanent": true
+    },
+    {
+      "source": "/emile4",
+      "destination": "/emile-desweemer-betrayal-here-is-your-toll.html",
+      "permanent": true
+    },
+    {
+      "source": "/emile5",
+      "destination": "/emile-desweemer-broken-beyond-repair.html",
+      "permanent": true
+    },
+    {
+      "source": "/emile6",
+      "destination": "/emile-desweemer-es-tu-brute.html",
+      "permanent": true
+    },
+    {
+      "source": "/emile7",
+      "destination": "/emile-desweemer-these-changes-are-a-martyr.html",
+      "permanent": true
+    },
+    {
+      "source": "/emile8",
+      "destination": "/emile-desweemer-all-i-wanted-was-to-be-home.html",
+      "permanent": true
+    },
+    {
+      "source": "/enquiry",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/exhibitions",
+      "destination": "/exhibitions.html",
+      "permanent": true
+    },
+    {
+      "source": "/gallery-in-the-distillery",
+      "destination": "/gallery-in-the-distillery.html",
+      "permanent": true
+    },
+    {
+      "source": "/galleryinthebakery",
+      "destination": "/galleryinthebakery.html",
+      "permanent": true
+    },
+    {
+      "source": "/home",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/index",
+      "destination": "/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/jan-de-laure",
+      "destination": "/jan-de-laure.html",
+      "permanent": true
+    },
+    {
+      "source": "/jan-de-laure-culture-equals-nature",
+      "destination": "/jan-de-laure-culture-equals-nature.html",
+      "permanent": true
+    },
+    {
+      "source": "/jan-de-laure-untitled-outside-world",
+      "destination": "/jan-de-laure-untitled-outside-world.html",
+      "permanent": true
+    },
+    {
+      "source": "/jan-vindevogel",
+      "destination": "/jan-vindevogel.html",
+      "permanent": true
+    },
+    {
+      "source": "/jan-vindevogel-breeze",
+      "destination": "/jan-vindevogel-breeze.html",
+      "permanent": true
+    },
+    {
+      "source": "/jan-vindevogel-current",
+      "destination": "/jan-vindevogel-current.html",
+      "permanent": true
+    },
+    {
+      "source": "/jan-vindevogel-emerald-surge",
+      "destination": "/jan-vindevogel-emerald-surge.html",
+      "permanent": true
+    },
+    {
+      "source": "/jan-vindevogel-the-book-of-rain",
+      "destination": "/jan-vindevogel-the-book-of-rain.html",
+      "permanent": true
+    },
+    {
+      "source": "/jan-vindevogel-thistle",
+      "destination": "/jan-vindevogel-thistle.html",
+      "permanent": true
+    },
+    {
+      "source": "/jan-vindevogel-untitled",
+      "destination": "/jan-vindevogel-untitled.html",
+      "permanent": true
+    },
+    {
+      "source": "/jan-vindevogel-vast-melancholy",
+      "destination": "/jan-vindevogel-vast-melancholy.html",
+      "permanent": true
+    },
+    {
+      "source": "/jan-vindevogel-waning",
+      "destination": "/jan-vindevogel-waning.html",
+      "permanent": true
+    },
+    {
+      "source": "/jandelaure1",
+      "destination": "/jan-de-laure-culture-equals-nature.html",
+      "permanent": true
+    },
+    {
+      "source": "/janvindevogel1",
+      "destination": "/jan-vindevogel-the-book-of-rain.html",
+      "permanent": true
+    },
+    {
+      "source": "/janvindevogel2",
+      "destination": "/jan-vindevogel-vast-melancholy.html",
+      "permanent": true
+    },
+    {
+      "source": "/janvindevogel3",
+      "destination": "/jan-vindevogel-thistle.html",
+      "permanent": true
+    },
+    {
+      "source": "/janvindevogel4",
+      "destination": "/jan-vindevogel-emerald-surge.html",
+      "permanent": true
+    },
+    {
+      "source": "/janvindevogel5",
+      "destination": "/jan-vindevogel-current.html",
+      "permanent": true
+    },
+    {
+      "source": "/janvindevogel6",
+      "destination": "/jan-vindevogel-waning.html",
+      "permanent": true
+    },
+    {
+      "source": "/janvindevogel7",
+      "destination": "/jan-vindevogel-breeze.html",
+      "permanent": true
+    },
+    {
+      "source": "/janvindevogel8",
+      "destination": "/jan-vindevogel-untitled.html",
+      "permanent": true
+    },
+    {
+      "source": "/jean-de-groote",
+      "destination": "/jean-de-groote.html",
+      "permanent": true
+    },
+    {
+      "source": "/jean-de-groote-epifanie",
+      "destination": "/jean-de-groote-epifanie.html",
+      "permanent": true
+    },
+    {
+      "source": "/jean-de-groote-les-mots-et-les-choses",
+      "destination": "/jean-de-groote-les-mots-et-les-choses.html",
+      "permanent": true
+    },
+    {
+      "source": "/jean-de-groote-representation-of-memoire",
+      "destination": "/jean-de-groote-representation-of-memoire.html",
+      "permanent": true
+    },
+    {
+      "source": "/jean-de-groote-untitled-1",
+      "destination": "/jean-de-groote-untitled-1.html",
+      "permanent": true
+    },
+    {
+      "source": "/jean-de-groote-untitled-2",
+      "destination": "/jean-de-groote-untitled-2.html",
+      "permanent": true
+    },
+    {
+      "source": "/jean-de-groote-untitled-3",
+      "destination": "/jean-de-groote-untitled-3.html",
+      "permanent": true
+    },
+    {
+      "source": "/jean1",
+      "destination": "/jean-de-groote-les-mots-et-les-choses.html",
+      "permanent": true
+    },
+    {
+      "source": "/jean2",
+      "destination": "/jean-de-groote-untitled-1.html",
+      "permanent": true
+    },
+    {
+      "source": "/jean3",
+      "destination": "/jean-de-groote-untitled-2.html",
+      "permanent": true
+    },
+    {
+      "source": "/jean4",
+      "destination": "/jean-de-groote-representation-of-memoire.html",
+      "permanent": true
+    },
+    {
+      "source": "/jean5",
+      "destination": "/jean-de-groote-epifanie.html",
+      "permanent": true
+    },
+    {
+      "source": "/jean6",
+      "destination": "/jean-de-groote-untitled-3.html",
+      "permanent": true
+    },
+    {
+      "source": "/jeroen-frateur",
+      "destination": "/jeroen-frateur.html",
+      "permanent": true
+    },
+    {
+      "source": "/jeroen-frateur-blue-on-red-and-the-light",
+      "destination": "/jeroen-frateur-blue-on-red-and-the-light.html",
+      "permanent": true
+    },
+    {
+      "source": "/jeroen-frateur-chairwork-ro3-skateski",
+      "destination": "/jeroen-frateur-chairwork-ro3-skateski.html",
+      "permanent": true
+    },
+    {
+      "source": "/jeroen-frateur-dancing-spoilers",
+      "destination": "/jeroen-frateur-dancing-spoilers.html",
+      "permanent": true
+    },
+    {
+      "source": "/jeroen-frateur-erected-launcher",
+      "destination": "/jeroen-frateur-erected-launcher.html",
+      "permanent": true
+    },
+    {
+      "source": "/jeroen-frateur-felgekleurde-lanceerder",
+      "destination": "/jeroen-frateur-felgekleurde-lanceerder.html",
+      "permanent": true
+    },
+    {
+      "source": "/jeroen-frateur-grenspost-defensief-bazeke",
+      "destination": "/jeroen-frateur-grenspost-defensief-bazeke.html",
+      "permanent": true
+    },
+    {
+      "source": "/jeroen-frateur-space-station",
+      "destination": "/jeroen-frateur-space-station.html",
+      "permanent": true
+    },
+    {
+      "source": "/jeroenfrateur1",
+      "destination": "/jeroen-frateur-erected-launcher.html",
+      "permanent": true
+    },
+    {
+      "source": "/jeroenfrateur2",
+      "destination": "/jeroen-frateur-grenspost-defensief-bazeke.html",
+      "permanent": true
+    },
+    {
+      "source": "/jeroenfrateur3",
+      "destination": "/jeroen-frateur-dancing-spoilers.html",
+      "permanent": true
+    },
+    {
+      "source": "/jeroenfrateur4",
+      "destination": "/jeroen-frateur-space-station.html",
+      "permanent": true
+    },
+    {
+      "source": "/jeroenfrateur5",
+      "destination": "/jeroen-frateur-blue-on-red-and-the-light.html",
+      "permanent": true
+    },
+    {
+      "source": "/jeroenfrateur5-1",
+      "destination": "/jeroen-frateur-felgekleurde-lanceerder.html",
+      "permanent": true
+    },
+    {
+      "source": "/jeroenfrateur5-1-1",
+      "destination": "/jeroen-frateur-chairwork-ro3-skateski.html",
+      "permanent": true
+    },
+    {
+      "source": "/manon-soetens",
+      "destination": "/manon-soetens.html",
+      "permanent": true
+    },
+    {
+      "source": "/manon-soetens-a-tree-in-the-sea",
+      "destination": "/manon-soetens-a-tree-in-the-sea.html",
+      "permanent": true
+    },
+    {
+      "source": "/manon-soetens-anastasia",
+      "destination": "/manon-soetens-anastasia.html",
+      "permanent": true
+    },
+    {
+      "source": "/manon-soetens-de-grasbader",
+      "destination": "/manon-soetens-de-grasbader.html",
+      "permanent": true
+    },
+    {
+      "source": "/manon-soetens-de-rode-bal",
+      "destination": "/manon-soetens-de-rode-bal.html",
+      "permanent": true
+    },
+    {
+      "source": "/manon-soetens-de-witte-heuvel",
+      "destination": "/manon-soetens-de-witte-heuvel.html",
+      "permanent": true
+    },
+    {
+      "source": "/manon-soetens-de-witte-stip",
+      "destination": "/manon-soetens-de-witte-stip.html",
+      "permanent": true
+    },
+    {
+      "source": "/manon-soetens-just-a-stone",
+      "destination": "/manon-soetens-just-a-stone.html",
+      "permanent": true
+    },
+    {
+      "source": "/manon-soetens-mee-met-de-wind",
+      "destination": "/manon-soetens-mee-met-de-wind.html",
+      "permanent": true
+    },
+    {
+      "source": "/manon-soetens-verzacht",
+      "destination": "/manon-soetens-verzacht.html",
+      "permanent": true
+    },
+    {
+      "source": "/manonsoetens1",
+      "destination": "/manon-soetens-de-witte-stip.html",
+      "permanent": true
+    },
+    {
+      "source": "/manonsoetens2",
+      "destination": "/manon-soetens-mee-met-de-wind.html",
+      "permanent": true
+    },
+    {
+      "source": "/manonsoetens3",
+      "destination": "/manon-soetens-anastasia.html",
+      "permanent": true
+    },
+    {
+      "source": "/manonsoetens4",
+      "destination": "/manon-soetens-just-a-stone.html",
+      "permanent": true
+    },
+    {
+      "source": "/manonsoetens5",
+      "destination": "/manon-soetens-a-tree-in-the-sea.html",
+      "permanent": true
+    },
+    {
+      "source": "/manonsoetens6",
+      "destination": "/manon-soetens-de-witte-heuvel.html",
+      "permanent": true
+    },
+    {
+      "source": "/manonsoetens7",
+      "destination": "/manon-soetens-de-rode-bal.html",
+      "permanent": true
+    },
+    {
+      "source": "/manonsoetens8",
+      "destination": "/manon-soetens-verzacht.html",
+      "permanent": true
+    },
+    {
+      "source": "/manonsoetens9",
+      "destination": "/manon-soetens-de-grasbader.html",
+      "permanent": true
+    },
+    {
+      "source": "/martha-onderwater",
+      "destination": "/martha-onderwater.html",
+      "permanent": true
+    },
+    {
+      "source": "/martha-onderwater-jan",
+      "destination": "/martha-onderwater-jan.html",
+      "permanent": true
+    },
+    {
+      "source": "/martha-onderwater-man-met-stoel-1",
+      "destination": "/martha-onderwater-man-met-stoel-1.html",
+      "permanent": true
+    },
+    {
+      "source": "/martha-onderwater-man-met-stoel-2",
+      "destination": "/martha-onderwater-man-met-stoel-2.html",
+      "permanent": true
+    },
+    {
+      "source": "/martha-onderwater-man-met-stoel-3",
+      "destination": "/martha-onderwater-man-met-stoel-3.html",
+      "permanent": true
+    },
+    {
+      "source": "/martha-onderwater-nachtmerrie",
+      "destination": "/martha-onderwater-nachtmerrie.html",
+      "permanent": true
+    },
+    {
+      "source": "/martha-onderwater-naveed",
+      "destination": "/martha-onderwater-naveed.html",
+      "permanent": true
+    },
+    {
+      "source": "/martha-onderwater-sauna",
+      "destination": "/martha-onderwater-sauna.html",
+      "permanent": true
+    },
+    {
+      "source": "/martha-onderwater-zonnebad-karyatide",
+      "destination": "/martha-onderwater-zonnebad-karyatide.html",
+      "permanent": true
+    },
+    {
+      "source": "/martha1",
+      "destination": "/martha-onderwater-naveed.html",
+      "permanent": true
+    },
+    {
+      "source": "/marthaonderwater7",
+      "destination": "/martha-onderwater-man-met-stoel-2.html",
+      "permanent": true
+    },
+    {
+      "source": "/marthaonderwater8",
+      "destination": "/martha-onderwater-man-met-stoel-3.html",
+      "permanent": true
+    },
+    {
+      "source": "/marthaonderwaterjan",
+      "destination": "/martha-onderwater-jan.html",
+      "permanent": true
+    },
+    {
+      "source": "/marthaonderwaterjan6",
+      "destination": "/martha-onderwater-man-met-stoel-1.html",
+      "permanent": true
+    },
+    {
+      "source": "/marthaonderwaternachtmerrie",
+      "destination": "/martha-onderwater-nachtmerrie.html",
+      "permanent": true
+    },
+    {
+      "source": "/marthaonderwatersauna",
+      "destination": "/martha-onderwater-sauna.html",
+      "permanent": true
+    },
+    {
+      "source": "/marthaonderwaterzonnebad",
+      "destination": "/martha-onderwater-zonnebad-karyatide.html",
+      "permanent": true
+    },
+    {
+      "source": "/orlando-gruwez",
+      "destination": "/orlando-gruwez.html",
+      "permanent": true
+    },
+    {
+      "source": "/orlando-gruwez-123456789-987654321",
+      "destination": "/orlando-gruwez-123456789-987654321.html",
+      "permanent": true
+    },
+    {
+      "source": "/orlando-gruwez-1988",
+      "destination": "/orlando-gruwez-1988.html",
+      "permanent": true
+    },
+    {
+      "source": "/orlando-gruwez-little-red-rooster",
+      "destination": "/orlando-gruwez-little-red-rooster.html",
+      "permanent": true
+    },
+    {
+      "source": "/orlando-gruwez-metsovo",
+      "destination": "/orlando-gruwez-metsovo.html",
+      "permanent": true
+    },
+    {
+      "source": "/orlando-gruwez-untitled",
+      "destination": "/orlando-gruwez-untitled.html",
+      "permanent": true
+    },
+    {
+      "source": "/orlando1",
+      "destination": "/orlando-gruwez-metsovo.html",
+      "permanent": true
+    },
+    {
+      "source": "/orlando2",
+      "destination": "/orlando-gruwez-1988.html",
+      "permanent": true
+    },
+    {
+      "source": "/orlando3",
+      "destination": "/orlando-gruwez-little-red-rooster.html",
+      "permanent": true
+    },
+    {
+      "source": "/orlando4",
+      "destination": "/orlando-gruwez-123456789-987654321.html",
+      "permanent": true
+    },
+    {
+      "source": "/orlando5",
+      "destination": "/orlando-gruwez-untitled.html",
+      "permanent": true
+    },
+    {
+      "source": "/press",
+      "destination": "/press.html",
+      "permanent": true
+    },
+    {
+      "source": "/randoald-sabbe",
+      "destination": "/randoald-sabbe.html",
+      "permanent": true
+    },
+    {
+      "source": "/randoald-sabbe-a-shoe-and-a-brick",
+      "destination": "/randoald-sabbe-a-shoe-and-a-brick.html",
+      "permanent": true
+    },
+    {
+      "source": "/randoald-sabbe-b",
+      "destination": "/randoald-sabbe-b.html",
+      "permanent": true
+    },
+    {
+      "source": "/randoald-sabbe-blown-away",
+      "destination": "/randoald-sabbe-blown-away.html",
+      "permanent": true
+    },
+    {
+      "source": "/randoald-sabbe-blue-tit-white-lie",
+      "destination": "/randoald-sabbe-blue-tit-white-lie.html",
+      "permanent": true
+    },
+    {
+      "source": "/randoald-sabbe-bruikleen",
+      "destination": "/randoald-sabbe-bruikleen.html",
+      "permanent": true
+    },
+    {
+      "source": "/randoald-sabbe-copy-cat",
+      "destination": "/randoald-sabbe-copy-cat.html",
+      "permanent": true
+    },
+    {
+      "source": "/randoald-sabbe-daily-pain-quotidien",
+      "destination": "/randoald-sabbe-daily-pain-quotidien.html",
+      "permanent": true
+    },
+    {
+      "source": "/randoald-sabbe-good-cop-bad-copy",
+      "destination": "/randoald-sabbe-good-cop-bad-copy.html",
+      "permanent": true
+    },
+    {
+      "source": "/randoald-sabbe-het-lichaam-van-christus-is-het-brood-van-gisteren",
+      "destination": "/randoald-sabbe-het-lichaam-van-christus-is-het-brood-van-gisteren.html",
+      "permanent": true
+    },
+    {
+      "source": "/randoald-sabbe-het-proctusbed",
+      "destination": "/randoald-sabbe-het-proctusbed.html",
+      "permanent": true
+    },
+    {
+      "source": "/randoald-sabbe-listen-to-the-landscape",
+      "destination": "/randoald-sabbe-listen-to-the-landscape.html",
+      "permanent": true
+    },
+    {
+      "source": "/randoald-sabbe-rencontre-moi-iii",
+      "destination": "/randoald-sabbe-rencontre-moi-iii.html",
+      "permanent": true
+    },
+    {
+      "source": "/randoald-sabbe-shine",
+      "destination": "/randoald-sabbe-shine.html",
+      "permanent": true
+    },
+    {
+      "source": "/randoald-sabbe-spirit",
+      "destination": "/randoald-sabbe-spirit.html",
+      "permanent": true
+    },
+    {
+      "source": "/randoald-sabbe-t-rex",
+      "destination": "/randoald-sabbe-t-rex.html",
+      "permanent": true
+    },
+    {
+      "source": "/randoald-sabbe-tijd-rijpt",
+      "destination": "/randoald-sabbe-tijd-rijpt.html",
+      "permanent": true
+    },
+    {
+      "source": "/randoald-sabbe-tink-tank",
+      "destination": "/randoald-sabbe-tink-tank.html",
+      "permanent": true
+    },
+    {
+      "source": "/randoald-sabbe-triangle-method",
+      "destination": "/randoald-sabbe-triangle-method.html",
+      "permanent": true
+    },
+    {
+      "source": "/randoald-sabbe-zie-hier-ziet-niet",
+      "destination": "/randoald-sabbe-zie-hier-ziet-niet.html",
+      "permanent": true
+    },
+    {
+      "source": "/randoald1",
+      "destination": "/randoald-sabbe-a-shoe-and-a-brick.html",
+      "permanent": true
+    },
+    {
+      "source": "/randoald10",
+      "destination": "/randoald-sabbe-tijd-rijpt.html",
+      "permanent": true
+    },
+    {
+      "source": "/randoald11",
+      "destination": "/randoald-sabbe-tink-tank.html",
+      "permanent": true
+    },
+    {
+      "source": "/randoald12",
+      "destination": "/randoald-sabbe-triangle-method.html",
+      "permanent": true
+    },
+    {
+      "source": "/randoald13",
+      "destination": "/randoald-sabbe-zie-hier-ziet-niet.html",
+      "permanent": true
+    },
+    {
+      "source": "/randoald14",
+      "destination": "/randoald-sabbe-good-cop-bad-copy.html",
+      "permanent": true
+    },
+    {
+      "source": "/randoald15",
+      "destination": "/randoald-sabbe-copy-cat.html",
+      "permanent": true
+    },
+    {
+      "source": "/randoald16",
+      "destination": "/randoald-sabbe-b.html",
+      "permanent": true
+    },
+    {
+      "source": "/randoald17",
+      "destination": "/randoald-sabbe-het-lichaam-van-christus-is-het-brood-van-gisteren.html",
+      "permanent": true
+    },
+    {
+      "source": "/randoald18",
+      "destination": "/randoald-sabbe-daily-pain-quotidien.html",
+      "permanent": true
+    },
+    {
+      "source": "/randoald19",
+      "destination": "/randoald-sabbe-t-rex.html",
+      "permanent": true
+    },
+    {
+      "source": "/randoald2",
+      "destination": "/randoald-sabbe-listen-to-the-landscape.html",
+      "permanent": true
+    },
+    {
+      "source": "/randoald3",
+      "destination": "/randoald-sabbe-blue-tit-white-lie.html",
+      "permanent": true
+    },
+    {
+      "source": "/randoald4",
+      "destination": "/randoald-sabbe-het-proctusbed.html",
+      "permanent": true
+    },
+    {
+      "source": "/randoald5",
+      "destination": "/randoald-sabbe-bruikleen.html",
+      "permanent": true
+    },
+    {
+      "source": "/randoald6",
+      "destination": "/randoald-sabbe-blown-away.html",
+      "permanent": true
+    },
+    {
+      "source": "/randoald7",
+      "destination": "/randoald-sabbe-rencontre-moi-iii.html",
+      "permanent": true
+    },
+    {
+      "source": "/randoald8",
+      "destination": "/randoald-sabbe-shine.html",
+      "permanent": true
+    },
+    {
+      "source": "/randoald9",
+      "destination": "/randoald-sabbe-spirit.html",
+      "permanent": true
+    },
+    {
+      "source": "/stief-de-smet",
+      "destination": "/stief-de-smet.html",
+      "permanent": true
+    },
+    {
+      "source": "/stief-de-smet-athena-noctua-minot-v",
+      "destination": "/stief-de-smet-athena-noctua-minot-v.html",
+      "permanent": true
+    },
+    {
+      "source": "/stief-de-smet-athena-noctua-minot-vi",
+      "destination": "/stief-de-smet-athena-noctua-minot-vi.html",
+      "permanent": true
+    },
+    {
+      "source": "/stief-de-smet-athena-noctua-minot-vii",
+      "destination": "/stief-de-smet-athena-noctua-minot-vii.html",
+      "permanent": true
+    },
+    {
+      "source": "/stief-de-smet-athena-noctua-spinae",
+      "destination": "/stief-de-smet-athena-noctua-spinae.html",
+      "permanent": true
+    },
+    {
+      "source": "/stief-de-smet-last-one-fading",
+      "destination": "/stief-de-smet-last-one-fading.html",
+      "permanent": true
+    },
+    {
+      "source": "/stief-de-smet-nest-shelter",
+      "destination": "/stief-de-smet-nest-shelter.html",
+      "permanent": true
+    },
+    {
+      "source": "/stief-de-smet-rosa-venus",
+      "destination": "/stief-de-smet-rosa-venus.html",
+      "permanent": true
+    },
+    {
+      "source": "/stief-de-smet-rumex-acetosa",
+      "destination": "/stief-de-smet-rumex-acetosa.html",
+      "permanent": true
+    },
+    {
+      "source": "/stief-de-smet-self-with-3-moons",
+      "destination": "/stief-de-smet-self-with-3-moons.html",
+      "permanent": true
+    },
+    {
+      "source": "/stief-de-smet-statera-self",
+      "destination": "/stief-de-smet-statera-self.html",
+      "permanent": true
+    },
+    {
+      "source": "/stief-de-smet-statera-wenix",
+      "destination": "/stief-de-smet-statera-wenix.html",
+      "permanent": true
+    },
+    {
+      "source": "/stiefdesmet1",
+      "destination": "/stief-de-smet-statera-self.html",
+      "permanent": true
+    },
+    {
+      "source": "/stiefdesmet10",
+      "destination": "/stief-de-smet-rumex-acetosa.html",
+      "permanent": true
+    },
+    {
+      "source": "/stiefdesmet11",
+      "destination": "/stief-de-smet-statera-wenix.html",
+      "permanent": true
+    },
+    {
+      "source": "/stiefdesmet2",
+      "destination": "/stief-de-smet-athena-noctua-spinae.html",
+      "permanent": true
+    },
+    {
+      "source": "/stiefdesmet3",
+      "destination": "/stief-de-smet-last-one-fading.html",
+      "permanent": true
+    },
+    {
+      "source": "/stiefdesmet4",
+      "destination": "/stief-de-smet-nest-shelter.html",
+      "permanent": true
+    },
+    {
+      "source": "/stiefdesmet5",
+      "destination": "/stief-de-smet-athena-noctua-minot-vi.html",
+      "permanent": true
+    },
+    {
+      "source": "/stiefdesmet6",
+      "destination": "/stief-de-smet-athena-noctua-minot-vii.html",
+      "permanent": true
+    },
+    {
+      "source": "/stiefdesmet7",
+      "destination": "/stief-de-smet-athena-noctua-minot-v.html",
+      "permanent": true
+    },
+    {
+      "source": "/stiefdesmet8",
+      "destination": "/stief-de-smet-self-with-3-moons.html",
+      "permanent": true
+    },
+    {
+      "source": "/stiefdesmet9",
+      "destination": "/stief-de-smet-rosa-venus.html",
+      "permanent": true
+    },
+    {
+      "source": "/william-ludwig-lutgens",
+      "destination": "/william-ludwig-lutgens.html",
+      "permanent": true
+    },
+    {
+      "source": "/william-ludwig-lutgens-do-you-think",
+      "destination": "/william-ludwig-lutgens-do-you-think.html",
+      "permanent": true
+    },
+    {
+      "source": "/william-ludwig-lutgens-gladiators-on-a-hike",
+      "destination": "/william-ludwig-lutgens-gladiators-on-a-hike.html",
+      "permanent": true
+    },
+    {
+      "source": "/william-ludwig-lutgens-heee-no-more-sunflower-oil",
+      "destination": "/william-ludwig-lutgens-heee-no-more-sunflower-oil.html",
+      "permanent": true
+    },
+    {
+      "source": "/william-ludwig-lutgens-kentucky",
+      "destination": "/william-ludwig-lutgens-kentucky.html",
+      "permanent": true
+    },
+    {
+      "source": "/william-ludwig-lutgens-liberal-arts-department",
+      "destination": "/william-ludwig-lutgens-liberal-arts-department.html",
+      "permanent": true
+    },
+    {
+      "source": "/william-ludwig-lutgens-montana",
+      "destination": "/william-ludwig-lutgens-montana.html",
+      "permanent": true
+    },
+    {
+      "source": "/william-ludwig-lutgens-n-dakota",
+      "destination": "/william-ludwig-lutgens-n-dakota.html",
+      "permanent": true
+    },
+    {
+      "source": "/william-ludwig-lutgens-s-dakota",
+      "destination": "/william-ludwig-lutgens-s-dakota.html",
+      "permanent": true
+    },
+    {
+      "source": "/william-ludwig-lutgens-the-beauty-of-a-filthy-evil-animal",
+      "destination": "/william-ludwig-lutgens-the-beauty-of-a-filthy-evil-animal.html",
+      "permanent": true
+    },
+    {
+      "source": "/william-ludwig-lutgens-the-escape",
+      "destination": "/william-ludwig-lutgens-the-escape.html",
+      "permanent": true
+    },
+    {
+      "source": "/williamludwiglutgens1",
+      "destination": "/william-ludwig-lutgens-the-escape.html",
+      "permanent": true
+    },
+    {
+      "source": "/williamludwiglutgens10",
+      "destination": "/william-ludwig-lutgens-s-dakota.html",
+      "permanent": true
+    },
+    {
+      "source": "/williamludwiglutgens2",
+      "destination": "/william-ludwig-lutgens-heee-no-more-sunflower-oil.html",
+      "permanent": true
+    },
+    {
+      "source": "/williamludwiglutgens3",
+      "destination": "/william-ludwig-lutgens-liberal-arts-department.html",
+      "permanent": true
+    },
+    {
+      "source": "/williamludwiglutgens4",
+      "destination": "/william-ludwig-lutgens-do-you-think.html",
+      "permanent": true
+    },
+    {
+      "source": "/williamludwiglutgens5",
+      "destination": "/william-ludwig-lutgens-the-beauty-of-a-filthy-evil-animal.html",
+      "permanent": true
+    },
+    {
+      "source": "/williamludwiglutgens6",
+      "destination": "/william-ludwig-lutgens-gladiators-on-a-hike.html",
+      "permanent": true
+    },
+    {
+      "source": "/williamludwiglutgens7",
+      "destination": "/william-ludwig-lutgens-kentucky.html",
+      "permanent": true
+    },
+    {
+      "source": "/williamludwiglutgens8",
+      "destination": "/william-ludwig-lutgens-montana.html",
+      "permanent": true
+    },
+    {
+      "source": "/williamludwiglutgens9",
+      "destination": "/william-ludwig-lutgens-n-dakota.html",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/images/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(css|js)/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        }
+      ]
+    }
+  ],
+  "crons": [
+    {
+      "path": "/api/keepalive",
+      "schedule": "0 9 * * 1"
+    }
+  ]
+}

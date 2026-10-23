@@ -3,11 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Orlando Gruwez — Casper Bekaert Gallery</title>
+  <title>Orlando Gruwez — Painting — Casper Bekaert Gallery, Ertvelde</title>
+  <meta name="description" content="Orlando Gruwez — Painting · Drawing · b. 1994 at Casper Bekaert Gallery, Ertvelde. Orlando Gruwez (1994) is a painter and occasionally a maker of furniture and sculptures. Using old books, encyclopedias, postcards, collected prints, and self-made photographs, he searches for his own visual language." />
+  <link rel="canonical" href="https://casperbekaertgallery.com/orlando-gruwez.html" />
+  <meta property="og:site_name" content="Casper Bekaert Gallery" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Orlando Gruwez — Painting — Casper Bekaert Gallery, Ertvelde" />
+  <meta property="og:image" content="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/orlando.png" />
+  <meta property="og:description" content="Orlando Gruwez — Painting · Drawing · b. 1994 at Casper Bekaert Gallery, Ertvelde. Orlando Gruwez (1994) is a painter and occasionally a maker of furniture and sculptures. Using old books, encyclopedias, postcards, collected prints, and self-made photographs, he searches for his own visual language." />
+  <meta property="og:url" content="https://casperbekaertgallery.com/orlando-gruwez.html" />
+  <meta property="og:locale" content="en_BE" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600&family=Cormorant+Garamond:wght@300;400&family=Jost:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css?v=45" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Orlando Gruwez",
+    "jobTitle": "Artist",
+    "url": "https://casperbekaertgallery.com/orlando-gruwez.html",
+    "affiliation": {
+      "@type": "ArtGallery",
+      "name": "Casper Bekaert Gallery"
+    },
+    "image": "https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/orlando.png"
+  }
+  </script>
 </head>
 <body>
   <div id="cursor-dot" class="cursor-dot"></div>
@@ -16,11 +41,11 @@
   <nav id="main-nav">
     <a href="index.html" class="nav-logo">Casper Bekaert Gallery</a>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="exhibitions.html">Exhibitions</a></li>
-      <li><a href="artists.html" class="nav-active">Artists</a></li>
-      <li><a href="press.html">Press</a></li>
-      <li><a href="contact.html">About</a></li>
+      <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+      <li><a href="exhibitions.html" data-i18n="nav.exhibitions">Exhibitions</a></li>
+      <li><a href="artists.html" class="nav-active" data-i18n="nav.artists">Artists</a></li>
+      <li><a href="press.html" data-i18n="nav.press">Press</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">About</a></li>
     </ul>
     <div class="nav-actions">
       <a href="https://www.instagram.com/casperbekaertgallery" target="_blank" rel="noopener" class="nav-social">Instagram</a>
@@ -32,38 +57,87 @@
   </nav>
   <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
     <nav class="mobile-nav">
-      <a href="index.html" class="mobile-nav-link">Home</a>
-      <a href="exhibitions.html" class="mobile-nav-link">Exhibitions</a>
-      <a href="artists.html" class="mobile-nav-link">Artists</a>
-      <a href="press.html" class="mobile-nav-link">Press</a>
-      <a href="contact.html" class="mobile-nav-link">About</a>
-      <div class="mobile-nav-socials">
-        <a href="https://www.instagram.com/casperbekaertgallery" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://www.facebook.com/people/Casperbekaertgallery/61579598334115/" target="_blank" rel="noopener">Facebook</a>
+      <a href="index.html" class="mobile-nav-link" data-i18n="nav.home">Home</a>
+      <a href="exhibitions.html" class="mobile-nav-link" data-i18n="nav.exhibitions">Exhibitions</a>
+      <a href="artists.html" class="mobile-nav-link" data-i18n="nav.artists">Artists</a>
+      <a href="press.html" class="mobile-nav-link" data-i18n="nav.press">Press</a>
+      <a href="contact.html" class="mobile-nav-link" data-i18n="nav.contact">About</a>
+      <div class="mobile-lang">
+        <button class="mobile-lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+        <button class="mobile-lang-btn" data-lang="nl" onclick="setLang('nl')">NL</button>
+        <button class="mobile-lang-btn" data-lang="fr" onclick="setLang('fr')">FR</button>
       </div>
     </nav>
   </div>
 
   <div class="page-hero">
-    <a href="artists.html" class="back-link">← Artists</a>
-    <div class="page-hero-label">Painting · Drawing · b. 1994</div>
-    <h1 class="page-hero-title">Orlando <em>Gruwez</em></h1>
-    <p class="page-hero-sub">Gallery in the Bakery 2025</p>
+    <div class="artist-headline">
+      <h1 class="page-hero-title">Orlando Gruwez</h1>
+      <span class="artist-born" data-i18n="orlando.label">Painting · Drawing · b. 1994</span>
+    </div>
   </div>
 
   <div class="artist-detail-layout">
-    <div class="artist-photo-large">
-      <img src="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/orlando.png" alt="Orlando Gruwez">
-    </div>
     <div class="artist-bio-content">
-      <p class="artist-bio-text">
+      <p class="artist-meta-line">Gallery in the Bakery 2025</p>
+      <p class="artist-bio-text" data-i18n="orlando.bio.p1">
         Orlando Gruwez (1994) is a painter and occasionally a maker of furniture and sculptures. Using old books, encyclopedias, postcards, collected prints, and self-made photographs, he searches for his own visual language. Transience is an important theme throughout his work. He primarily works with oil paint, and in recent years he has increasingly focused on drawing.
       </p>
-      <p class="artist-bio-text">
+      <p class="artist-bio-text" data-i18n="orlando.bio.p2">
         During secondary school, he followed a program in visual arts, which sparked his interest in art. Afterwards, he completed a full-time wood and furniture program at Goca Gent, an alternative craft school. His connection to and love for wood has never entirely disappeared and is still evident in his work. In higher education, he studied interior design at LUCA School of Arts Gent. By the time he graduated in 2017, he had already been painting for some time. Since then, he has continued painting, producing more and more work. In the meantime, he has participated in various exhibitions, both in group shows and in collaboration with galleries or museums.
       </p>
     </div>
+    <div class="artist-photo-large">
+      <img src="https://wojavtiwvveynjbkwotd.supabase.co/storage/v1/object/public/Gallery/orlando.png" alt="Orlando Gruwez, artist at Casper Bekaert Gallery">
+    </div>
   </div>
+
+
+  <section class="artist-works-section">
+    <p class="section-label" data-i18n="aw.works">Works</p>
+    <div class="works-grid">
+      <div class="work-card reveal" data-pricekind="request" data-price="Price on request" data-full="images/artworks/orlando-gruwez/metsovo.jpg" data-title="Metsovo" data-year="2025" data-materials="Oil on canvas" data-exh="Gallery in the Bakery 2025" data-exhhref="galleryinthebakery.html">
+        <a class="work-card-link" href="orlando-gruwez-metsovo.html">
+          <div class="work-card-img">
+            <img src="images/artworks/orlando-gruwez/metsovo.jpg" alt="Metsovo" loading="lazy">
+          </div>
+          <p class="work-card-title">Metsovo, 2025</p>
+        </a>
+      </div>
+      <div class="work-card reveal" data-pricekind="request" data-price="Price on request" data-full="images/artworks/orlando-gruwez/1988.jpg" data-title="1988" data-year="2025" data-materials="Oil on canvas" data-exh="Gallery in the Bakery 2025" data-exhhref="galleryinthebakery.html">
+        <a class="work-card-link" href="orlando-gruwez-1988.html">
+          <div class="work-card-img">
+            <img src="images/artworks/orlando-gruwez/1988.jpg" alt="1988" loading="lazy">
+          </div>
+          <p class="work-card-title">1988, 2025</p>
+        </a>
+      </div>
+      <div class="work-card reveal" data-pricekind="request" data-price="Price on request" data-full="images/artworks/orlando-gruwez/little-red-rooster.jpg" data-title="Little Red Rooster" data-year="2025" data-materials="Oil on canvas" data-exh="Gallery in the Bakery 2025" data-exhhref="galleryinthebakery.html">
+        <a class="work-card-link" href="orlando-gruwez-little-red-rooster.html">
+          <div class="work-card-img">
+            <img src="images/artworks/orlando-gruwez/little-red-rooster.jpg" alt="Little Red Rooster" loading="lazy">
+          </div>
+          <p class="work-card-title">Little Red Rooster, 2025</p>
+        </a>
+      </div>
+      <div class="work-card reveal" data-pricekind="request" data-price="Price on request" data-full="images/artworks/orlando-gruwez/123456789-987654321.jpg" data-title="123456789-987654321" data-year="2025" data-exh="Gallery in the Bakery 2025" data-exhhref="galleryinthebakery.html">
+        <a class="work-card-link" href="orlando-gruwez-123456789-987654321.html">
+          <div class="work-card-img">
+            <img src="images/artworks/orlando-gruwez/123456789-987654321.jpg" alt="123456789-987654321" loading="lazy">
+          </div>
+          <p class="work-card-title">123456789-987654321, 2025</p>
+        </a>
+      </div>
+      <div class="work-card reveal" data-pricekind="request" data-price="Price on request" data-full="images/artworks/orlando-gruwez/untitled.jpg" data-title="Untitled" data-year="2025" data-materials="Oil on canvas" data-exh="Gallery in the Bakery 2025" data-exhhref="galleryinthebakery.html">
+        <a class="work-card-link" href="orlando-gruwez-untitled.html">
+          <div class="work-card-img">
+            <img src="images/artworks/orlando-gruwez/untitled.jpg" alt="Untitled" loading="lazy">
+          </div>
+          <p class="work-card-title">Untitled, 2025</p>
+        </a>
+      </div>
+    </div>
+  </section>
 
   <footer>
     <div class="footer-grid">
@@ -74,11 +148,11 @@
       <div>
         <p class="footer-heading">Navigation</p>
         <ul class="footer-nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="exhibitions.html">Exhibitions</a></li>
-          <li><a href="artists.html">Artists</a></li>
-      <li><a href="press.html">Press</a></li>
-      <li><a href="contact.html">About</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="exhibitions.html" data-i18n="nav.exhibitions">Exhibitions</a></li>
+          <li><a href="artists.html" data-i18n="nav.artists">Artists</a></li>
+      <li><a href="press.html" data-i18n="nav.press">Press</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">About</a></li>
         </ul>
       </div>
       <div>
@@ -106,7 +180,8 @@
       </div>
     </div>
   </footer>
-  <script src="js/main.js"></script>
-  <script src="js/i18n.js"></script>
+  <script src="js/main.js?v=2"></script>
+  <script src="js/i18n.js?v=18"></script>
+  <script src="js/lightbox.js?v=7"></script>
 </body>
 </html>
