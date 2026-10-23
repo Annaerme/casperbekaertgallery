@@ -99,15 +99,20 @@ a { text-decoration: none; color: inherit; }
 .nav-links a.nav-active { color: var(--black); }
 
 .nav-actions {
-  display: none;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-left: 40px;
+  padding-left: 40px;
+  border-left: 1px solid var(--border);
 }
 
 .nav-social {
   font-family: var(--sans);
-  font-size: 17px;
+  font-size: 13px;
   font-weight: 300;
   letter-spacing: 0.02em;
-  color: var(--dark);
+  color: var(--gray);
   transition: color 0.25s;
 }
 .nav-social:hover { color: var(--black); }
@@ -258,12 +263,12 @@ a { text-decoration: none; color: inherit; }
 }
 .mobile-lang-btn:hover,
 .mobile-lang-btn.active { color: var(--black); }
-
-.mobile-nav-socials {
-  display: flex;
-  gap: 20px;
-  padding: 12px 24px 4px;
-}
+  .mobile-nav-socials {
+    display: flex;
+    gap: 24px;
+    padding: 20px var(--pad) 0;
+    justify-content: center;
+  }
 .mobile-nav-socials a {
   font-family: var(--sans);
   font-size: 11px;
